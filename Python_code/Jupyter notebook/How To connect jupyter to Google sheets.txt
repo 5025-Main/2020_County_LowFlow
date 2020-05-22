@@ -1,0 +1,6 @@
+Website with instructions (a little old):
+https://towardsdatascience.com/how-to-integrate-google-sheets-and-jupyter-notebooks-c469309aacea
+
+
+Share sheets with:
+google-sheets@quickstart-1590008023256.iam.gserviceaccount.com
