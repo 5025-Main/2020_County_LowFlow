@@ -108,10 +108,10 @@ def open_2020_FinalOffsets():
     fin_offsets.index = fin_offsets['Site']
     ##Convert number strings to floats and ints 
     fin_offsets = fin_offsets.apply(pd.to_numeric, errors='ignore')
-    return fin_offsets
+    return fin_offsets[['CalculatedOffset_in','GlobalOffset_in','FinalOffset_in']]
 
 #fin_offsets = open_2020_FinalOffsets()
-#fin_offsets
+#print fin_offsets
 
 def open_HvF_90degweir():
     ## Google Sheets params
