@@ -72,14 +72,15 @@ def zentra_json_parser(json_obj, logger_port):
     
     return results_df
 
-def getDeviceReadings(site_name,start_time_loc,device_df):
+def getDeviceReadings(site_name,start_time_loc):
     print 'Downloading data from Zentra API for site: ' + site_name
     print ' starting at '+start_time_loc.strftime("%m/%d/%Y %H:%M")
     ## API log in credentials
     user = "alex.messina@woodplc.com"
     user_password = "Mactec101"
     ## Device data on Serial number, password, and Port that probe is plugged into
-    #device_df = pd.DataFrame.from_csv(maindir + 'Ancillary_files/Meter_SN_pwd_list.csv')
+    ## Device info for Meter units
+    device_df = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/Meter_SN_pwd_list.csv',index_col=0)
     logger_port = device_df.ix[site_name]['Port']
     device_serial_number = device_df.ix[site_name]['Serial Number']
     device_password = device_df.ix[site_name]['Password']
@@ -88,6 +89,9 @@ def getDeviceReadings(site_name,start_time_loc,device_df):
     key_name= 'AlexMessina'
     token =  '1a45a3456373971b5d1120ab9a9953e731f13402'
     ## Format start time
+    mytz = timezone('US/Pacific')
+    #start_time_loc = dt.datetime(2020,5,20,0,0)
+    #start_time_loc = mytz.normalize(mytz.localize(start_time_loc,is_dst=True))
     start_time_utc = start_time_loc.astimezone(timezone('UTC'))
     start_time  = int((start_time_utc-dt.datetime(1970,1,1,0,0,tzinfo=timezone('UTC'))).total_seconds())
     

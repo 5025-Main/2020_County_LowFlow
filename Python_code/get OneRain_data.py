@@ -26,7 +26,8 @@ Rain_gauge_names = Rain_gauge_info.index.unique()
 
 
 ######### UPDATE HERE ###################
-start_date, end_date = '2020-05-01', '2020-05-15' ## for current day: dt.date.today().strftime('%Y-%m-%d')
+start_date, end_date = '2020-05-01', '2020-05-15' 
+start_date, end_date = '2020-05-01', dt.date.today().strftime('%Y-%m-%d') ## for current day: dt.date.today().strftime('%Y-%m-%d')
 time_bin  = '86400' #seconds. Daily=86400, Hourly=3600
 #######################################
 
