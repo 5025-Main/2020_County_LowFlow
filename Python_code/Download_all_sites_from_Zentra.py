@@ -23,6 +23,7 @@ if __name__ == "__main__":
     
     ## Loop through all sites
     for site_name in site_list['Site'][-1:]:
+        print
         print site_name
         
         try:
@@ -44,4 +45,4 @@ if __name__ == "__main__":
         
         ## Save raw data to csv
         maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
-        WL[['in Water Level',u'°F Water Temperature',u'mS/cm EC',u' Sensor Metadata',u'% Battery Percent','mV Battery Voltage','kPa Reference Pressure',u'\xb0F Logger Temperature']].to_csv(maindir+'Water_Level_data/'+site_name+'_raw_data_ZentraAPI.csv',encoding='utf-8')
+        #WL[['in Water Level',u'°F Water Temperature',u'mS/cm EC',u' Sensor Metadata',u'% Battery Percent','mV Battery Voltage','kPa Reference Pressure',u'\xb0F Logger Temperature']].to_csv(maindir+'Water_Level_data/'+site_name+'_raw_data_ZentraAPI.csv',encoding='utf-8')

@@ -96,6 +96,7 @@ def getDeviceReadings(site_name,start_time_loc):
     start_time  = int((start_time_utc-dt.datetime(1970,1,1,0,0,tzinfo=timezone('UTC'))).total_seconds())
     
     ## Construct url for API call
+    print 'Downloading data from Zentra API.....please wait....'
     url = 'https://' + ip + '/api/v1/readings'+ '?' + "sn=" + device_serial_number+ '&' + "start_time=" + '%s'%start_time
     ## Request data from API
     request = urllib2.Request(url)
@@ -108,11 +109,12 @@ def getDeviceReadings(site_name,start_time_loc):
     readings_json = json.loads(readings_str)
     # Readings are now contained in the 'readings_json' Python dictionary
     ## Data is read from JSON object using the zentra_json_parser defined above
-    print 'Downloading and formatting data....please wait...'
+    print 'Formatting data....please wait...'
     df = zentra_json_parser(readings_json, logger_port)
     
     df['in Water Level'].plot(title='Water Level (in)')
     print 'Data download complete!'
+    print
     
     # Examples of accessing data
     #print json.dumps(readings_json, sort_keys=True, indent=4)
@@ -123,7 +125,7 @@ def getDeviceReadings(site_name,start_time_loc):
 
     
     
-    return df[['in Water Level',u'°F Water Temperature',u'mS/cm EC',u' Sensor Metadata',u'% Battery Percent','mV Battery Voltage','kPa Reference Pressure',u'\xb0F Logger Temperature']]
+    return df[['in Water Level',u'\xb0F Water Temperature',u'mS/cm EC',u' Sensor Metadata',u'% Battery Percent','mV Battery Voltage','kPa Reference Pressure',u'\xb0F Logger Temperature']]
 
 
 #if __name__ == "__main__":
