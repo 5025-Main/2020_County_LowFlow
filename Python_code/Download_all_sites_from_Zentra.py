@@ -28,7 +28,7 @@ if __name__ == "__main__":
         
         try:
             ## Get existing data on GitHub to get last data point
-            WL_existing = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Water_Level_data/'+site_name+'_raw_data_ZentraAPI.csv',index_col=0)
+            WL_existing = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Water_Level_data/'+site_name+'_raw_data_ZentraAPI.csv',index_col=0,encoding='utf-8')
             # Last existing data point
             last_data_time = pd.to_datetime(WL_existing.index[-1])
             print 'Last data point in existing data at: '+last_data_time.strftime("%m/%d/%Y %H:%M")
