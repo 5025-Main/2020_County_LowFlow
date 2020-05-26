@@ -25,7 +25,7 @@ if __name__ == "__main__":
     site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/MasterSiteList.csv')
     
     ## Loop through all sites
-    for site_name in site_list['Site'].values[7:]:
+    for site_name in site_list['Site'].values[9:]:
         print site_name
     
         ## Call Zentra API to get data from start time to current

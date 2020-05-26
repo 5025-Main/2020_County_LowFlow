@@ -5,6 +5,7 @@ Created on Thu Aug 22 12:51:41 2019
 @author: alex.messina
 """
 import pandas as pd
+import numpy as np
 import datetime as dt
 from pytz import timezone
 import json
@@ -36,14 +37,17 @@ def zentra_json_parser(json_obj, logger_port):
         ## Extract measurement data using the defined port number (+1)
         try:
             water_level_data = filter(lambda x: x[0]['description']=='Water Level',row[3:])[0]
+            meas_df = pd.DataFrame(water_level_data)
+            ## Construct headers using units and parameter name
+            meas_df.index =   meas_df['units'].str.strip(' ')+' '+meas_df['description']
+            ## Transpose rows to column headers
+            meas_df = meas_df.T
+            meas_dict = dict(meas_df.ix['value'])
+        
         except:
             print 'No Water Level data in description'
-        meas_df = pd.DataFrame(water_level_data)
-        ## Construct headers using units and parameter name
-        meas_df.index =   meas_df['units'].str.strip(' ')+' '+meas_df['description']
-        ## Transpose rows to column headers
-        meas_df = meas_df.T
-        meas_dict = dict(meas_df.ix['value'])
+            meas_dict = {u' Sensor Metadata': np.nan, u'in Water Level':  np.nan, u'mS/cm EC':  np.nan, u'\xb0F Water Temperature':  np.nan}
+        
         
         ## Extract battery level data
         battery_data = filter(lambda x: x[0]['description']=='Battery Percent',row[3:])[0]
