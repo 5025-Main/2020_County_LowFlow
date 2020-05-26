@@ -34,7 +34,11 @@ def zentra_json_parser(json_obj, logger_port):
         loc_time = pd.to_datetime(loc_time)
         
         ## Extract measurement data using the defined port number (+1)
-        meas_df = pd.DataFrame(row[port_reference_number])
+        try:
+            water_level_data = filter(lambda x: x[0]['description']=='Water Level',row[3:])[0]
+        except:
+            print 'No Water Level data in description'
+        meas_df = pd.DataFrame(water_level_data)
         ## Construct headers using units and parameter name
         meas_df.index =   meas_df['units'].str.strip(' ')+' '+meas_df['description']
         ## Transpose rows to column headers
@@ -42,12 +46,14 @@ def zentra_json_parser(json_obj, logger_port):
         meas_dict = dict(meas_df.ix['value'])
         
         ## Extract battery level data
-        batt_df = pd.DataFrame(row[-2])
+        battery_data = filter(lambda x: x[0]['description']=='Battery Percent',row[3:])[0]
+        batt_df = pd.DataFrame(battery_data)
         batt_df.index =   batt_df['units'].str.strip(' ')+' '+batt_df['description']
         batt_df = batt_df.T
         batt_dict = dict(batt_df.ix['value'])
         ## Extract logger baro/temp data
-        baro_df = pd.DataFrame(row[-1])
+        baro_data = filter(lambda x: x[0]['description']=='Reference Pressure',row[3:])[0]
+        baro_df = pd.DataFrame(baro_data)
         baro_df.index =   baro_df['units'].str.strip(' ')+' '+baro_df['description']
         baro_df = baro_df.T
         baro_dict = dict(baro_df.ix['value'])
