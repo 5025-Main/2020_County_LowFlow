@@ -79,7 +79,7 @@ def getDeviceReadings(site_name,start_time_loc):
     user = "alex.messina@woodplc.com"
     user_password = "Mactec101"
     ## Device data on Serial number, password, and Port that probe is plugged into
-    ## Device info for Meter units
+    ## Device info for Meter units - stored on GitHub
     device_df = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/Meter_SN_pwd_list.csv',index_col=0)
     logger_port = device_df.ix[site_name]['Port']
     device_serial_number = device_df.ix[site_name]['Serial Number']

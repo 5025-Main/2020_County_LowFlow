@@ -146,7 +146,7 @@ def Excel_Plots(site_name, Corr_flow, rain_1D, final_flow_ExcelFile,hydro_start,
     ## Clipped Flow series
     temp_chart.add_series({'categories':"='"+sheet_name_clipped+"'!$A2:$A"+max_row,'values':"='"+sheet_name_clipped+"'!$B2:$B"+max_row,'marker':{'type':'none'},'line':{'color':'blue'},'name':'Flow'})
     ## Temp series
-    temp_chart.add_series({'categories':"='"+sheet_name_w_storms+"'!$A2:$A"+max_row,'values':"='"+sheet_name_w_storms+"'!$G2:$G"+max_row,'marker':{'type':'none'},'line':{'color':'red'},'name':'Water Temp. (F)','y2_axis': 1,})
+    temp_chart.add_series({'categories':"='"+sheet_name_w_storms+"'!$A2:$A"+max_row,'values':"='"+sheet_name_w_storms+"'!$F2:$F"+max_row,'marker':{'type':'none'},'line':{'color':'red'},'name':'Water Temp. (F)','y2_axis': 1,})
     
     ## Format chart
     temp_chart.set_x_axis({'position_axis':'on_tick','min':xmin,'max':xmax,'num_font':{'size':8,'rotation':90},'num_format':'mm/dd/yyyy'})
@@ -177,7 +177,7 @@ def Excel_Plots(site_name, Corr_flow, rain_1D, final_flow_ExcelFile,hydro_start,
     ## Clipped Flow series
     cond_chart.add_series({'categories':"='"+sheet_name_clipped+"'!$A2:$A"+max_row,'values':"='"+sheet_name_clipped+"'!$B2:$B"+max_row,'marker':{'type':'none'},'line':{'color':'blue'},'name':'Flow'})
     ## cond series
-    cond_chart.add_series({'categories':"='"+sheet_name_w_storms+"'!$A2:$A"+max_row,'values':"='"+sheet_name_w_storms+"'!$F2:$F"+max_row,'marker':{'type':'none'},'line':{'color':'orange'},'name':'Sp. Conductivity (uS/cm)','y2_axis': 1,})
+    cond_chart.add_series({'categories':"='"+sheet_name_w_storms+"'!$A2:$A"+max_row,'values':"='"+sheet_name_w_storms+"'!$E2:$E"+max_row,'marker':{'type':'none'},'line':{'color':'orange'},'name':'Sp. Conductivity (uS/cm)','y2_axis': 1,})
     
     ## Format chart
     cond_chart.set_x_axis({'position_axis':'on_tick','min':xmin,'max':xmax,'num_font':{'size':8,'rotation':90},'num_format':'mm/dd/yyyy'})
