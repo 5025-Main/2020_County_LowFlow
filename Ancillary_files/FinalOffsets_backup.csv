@@ -29,7 +29,7 @@ SDR-127B,nan,nan,nan
 SDR-130,nan,nan,nan
 SDR-203A,nan,nan,nan
 SDR-204A,nan,nan,nan
-SLR-095,nan,nan,nan
+SLR-095,1.2114285714285715,0,1.2114285714285715
 SLR-045,nan,nan,nan
 SLR-045A,nan,nan,nan
 SLR-045B,nan,nan,nan
@@ -39,4 +39,4 @@ SWT-030I,nan,nan,nan
 SWT-068,nan,nan,nan
 SWT-162,nan,nan,nan
 SWT-233,nan,nan,nan
-SWT-235,-3.564,0,-3.5640000000000001
+SWT-235,-3.564,0,-3.564
