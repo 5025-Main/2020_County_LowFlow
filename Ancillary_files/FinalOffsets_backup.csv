@@ -1,10 +1,10 @@
 Site,CalculatedOffset_in,GlobalOffset_in,FinalOffset_in
-CAR-007,-6.68333333333,0,-6.68333333333
+CAR-007,-6.68,0.00,-6.68
 CAR-059,nan,nan,nan
 CAR-059G,nan,nan,nan
-CAR-070,-5.747692307692308,0.14999999999999999,-5.5976923076923075
+CAR-070,-5.75,0.15,-5.60
 CAR-070E,nan,nan,nan
-CAR-072,nan,nan,nan
+CAR-072,-4.566428571428572,0.080000000000000002,-4.4864285714285721
 CAR-072C,nan,nan,nan
 CAR-072R,nan,nan,nan
 CAR-072O,nan,nan,nan
@@ -29,7 +29,7 @@ SDR-127B,nan,nan,nan
 SDR-130,nan,nan,nan
 SDR-203A,nan,nan,nan
 SDR-204A,nan,nan,nan
-SLR-095,1.21142857143,0,1.21142857143
+SLR-095,1.21,0.00,1.21
 SLR-045,nan,nan,nan
 SLR-045A,nan,nan,nan
 SLR-045B,nan,nan,nan
@@ -39,4 +39,4 @@ SWT-030I,nan,nan,nan
 SWT-068,nan,nan,nan
 SWT-162,nan,nan,nan
 SWT-233,nan,nan,nan
-SWT-235,-3.564,0,-3.564
+SWT-235,-3.56,0.00,-3.56
