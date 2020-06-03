@@ -130,8 +130,7 @@ def getDeviceReadings(site_name,start_time_loc):
 
 #if __name__ == "__main__":
 #    
-#    ## TESTING
-#    site_name = 'CAR-007'
+#    ## Get all sites
 #    start_time_loc = dt.datetime(2020,5,1,0,0)
 #    
 #    ## Format for UTC
