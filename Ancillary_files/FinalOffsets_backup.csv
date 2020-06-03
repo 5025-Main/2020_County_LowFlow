@@ -1,5 +1,5 @@
 Site,CalculatedOffset_in,GlobalOffset_in,FinalOffset_in
-CAR-007,-6.6,0,-6.6
+CAR-007,-6.683333333333334,0,-6.6833333333333336
 CAR-059,nan,nan,nan
 CAR-059G,nan,nan,nan
 CAR-070,nan,nan,nan
@@ -29,7 +29,7 @@ SDR-127B,nan,nan,nan
 SDR-130,nan,nan,nan
 SDR-203A,nan,nan,nan
 SDR-204A,nan,nan,nan
-SLR-095,1.2114285714285715,0,1.2114285714285715
+SLR-095,1.21142857143,0,1.21142857143
 SLR-045,nan,nan,nan
 SLR-045A,nan,nan,nan
 SLR-045B,nan,nan,nan
