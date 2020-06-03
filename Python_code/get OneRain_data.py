@@ -28,7 +28,7 @@ Rain_gauge_names = Rain_gauge_info.index.unique()
 ######### UPDATE HERE ###################
 start_date, end_date = '2020-05-01', '2020-05-15' 
 start_date, end_date = '2020-05-01', dt.date.today().strftime('%Y-%m-%d') ## for current day: dt.date.today().strftime('%Y-%m-%d')
-time_bin  = '86400' #seconds. Daily=86400, Hourly=3600
+time_bin  = '3600' #seconds. Daily=86400, Hourly=3600
 #######################################
 
 
@@ -99,9 +99,11 @@ for Rain_gauge_name in Rain_gauge_names:
                                 print '\n'
                                 pass
                         rain_data_df = pd.DataFrame({'Rain_in':rain_vals},index=pd.to_datetime(times)).sort_index()
-                        rain_data_df = rain_data_df.resample('D').sum()
+                        rain_data_1hr = rain_data_df.resample('1H').sum()
+                        rain_data_1D = rain_data_df.resample('D').sum()
                         
-                        rain_data_df.to_csv(maindir+'Rain_data/'+Rain_gauge_name+'_daily.csv')
+                        rain_data_1hr.to_csv(maindir+'Rain_data/'+Rain_gauge_name+'_hourly.csv')
+                        rain_data_1D.to_csv(maindir+'Rain_data/'+Rain_gauge_name+'_daily.csv')
             except Exception as e:
                 print (e)
                 pass
