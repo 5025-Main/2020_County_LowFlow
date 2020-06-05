@@ -220,7 +220,7 @@
 217,2020-05-22 08:36:25,SWT-030I,2020-05-21 11:20:00,Ponded,no flow,,0.0,60.0,0
 218,2020-05-22 08:38:02,SWT-030,2020-05-21 11:27:00,Flowing,flowing,,4.5,5.33,4200
 219,2020-05-22 08:40:29,SWT-233,2020-05-21 11:44:00,Ponded,possible seepage in pipes,https://drive.google.com/open?id=1BjIFBre4kE85P5HJ_4WIsaJUiOp3mfS5,-1.5,60.0,0
-220,2020-05-22 08:47:18,SWT-019,2020-05-21 11:57:00,Ponded,"pipe full of sed. possible pool filter diatomaceous earth, or sediment from back flush","https://drive.google.com/open?id=1G4bKq9BcHzCTdBQLLF43oP9k3q8ZbH-f, https://drive.google.com/open?id=1HdmO1l0Fw9xKdGolJeLN40twbWgp3mI3",0.0,60.0,0
+220,2020-05-22 08:47:18,SWT-019,2020-05-21 12:00:00,Ponded,"pipe full of sed. possible pool filter diatomaceous earth, or sediment from back flush","https://drive.google.com/open?id=1G4bKq9BcHzCTdBQLLF43oP9k3q8ZbH-f, https://drive.google.com/open?id=1HdmO1l0Fw9xKdGolJeLN40twbWgp3mI3",0.0,60.0,0
 221,2020-05-22 10:00:13,SLR-095,2020-05-22 10:00:00,Flowing,Small leaf in v but didn’t seem to impede flow ,https://drive.google.com/open?id=1H10xnlGnOnAgJ1AmtT6PGDF051CTorMQ,4.0,7.0,2520
 222,2020-05-22 10:16:41,SLR-095,2020-05-22 10:10:00,Flowing,None,,3.7,7.2,2830
 223,2020-05-22 10:21:00,SLR-095,2020-05-22 10:20:00,Flowing,None,,3.8,6.7,2680
@@ -306,7 +306,7 @@
 303,2020-05-27 16:33:07,SWT-030I,2020-05-27 11:12:00,Flowing,no flow,https://drive.google.com/open?id=1ZJ5GnyYAoyan6Pl1tQaLoXUjAYxXYz7E,0.0,60.0,0
 304,2020-05-27 16:35:03,SWT-030,2020-05-27 11:16:00,Flowing,flowing,,4.0,9.38,5000
 305,2020-05-27 16:38:19,SWT-233,2020-05-27 11:47:00,Flowing,"below v, possible seeping through cracks in cement joints",https://drive.google.com/open?id=1m_CXx7TnISFiYJAB5oxWVFAQ8aCaAy3s,-5.2,60.0,0
-306,2020-05-27 16:42:11,SWT-019,2020-05-27 12:26:00,Flowing,"flowing, some sediment left over from pool sediment",https://drive.google.com/open?id=1tiIQEFv1VmiIs4mxRyNubtYhMXUeuXF-,2.0,16.77,2600
+306,2020-05-27 16:42:11,SWT-019,2020-05-27 12:20:00,Flowing,"flowing, some sediment left over from pool sediment",https://drive.google.com/open?id=1tiIQEFv1VmiIs4mxRyNubtYhMXUeuXF-,2.0,16.77,2600
 307,2020-05-28 09:22:57,SLR-045,2020-05-27 15:15:00,Flowing,None,,1.4,30.0,1490
 308,2020-05-28 09:28:01,SLR-095,2020-05-27 09:25:00,Flowing,None,https://drive.google.com/open?id=1kYqdUm8gp-mCeiS5eondl-zHZc-07KqB,3.8,7.0,2900
 309,2020-05-28 09:40:03,SLR-095,2020-05-28 09:40:00,Flowing,None,,3.7,7.0,2950
@@ -364,3 +364,4 @@
 361,2020-05-28 16:26:41,SDG-085,2020-05-28 16:20:00,Flowing,None,,5.0,4.5,4100
 362,2020-05-29 16:11:32,SLR-095,2020-05-28 09:45:00,Flowing,None,,3.7,7.0,2960
 363,2020-05-29 18:07:38,SLR-095,2020-05-29 18:05:00,Flowing,Installed 3rd probe,,3.6,10.0,3420
+364,2020-06-03 22:58:46,SLR-095,2020-05-29 18:05:00,Flowing,Installed 3rd probe,,3.6,10.0,3420
