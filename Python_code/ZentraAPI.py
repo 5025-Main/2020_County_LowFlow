@@ -36,7 +36,7 @@ def zentra_json_parser(json_obj, logger_port):
         
         ## Extract measurement data using the defined port number (+1)
         try:
-            water_level_data = filter(lambda x: x[0]['description']=='Water Level', row[4:])[0]
+            water_level_data = filter(lambda x: x[0]['description']=='Water Level', row[3:])[0]
             meas_df = pd.DataFrame(water_level_data)
             ## Construct headers using units and parameter name
             meas_df.index =   meas_df['units'].str.strip(' ')+' '+meas_df['description']
