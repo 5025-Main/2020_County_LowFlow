@@ -21,10 +21,13 @@ for d in [f for f in os.listdir(datadir) if f.endswith('.xlsx')]:
         
         def hvf(x):
             try:
-                if x == 0:
-                    level = 0.
-                else:
-                    level= HvF.loc[x,'Level (in)']
+                level = HvF.loc[x,'Level (in)']
+                try:
+                    if len(HvF.loc[x,'Level (in)']) >= 1:
+                        level = HvF.loc[x,'Level (in)'].values[0]
+                except:  
+                    pass
+                    
                 #print level
             except:
                 level = np.nan

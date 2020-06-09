@@ -22,11 +22,17 @@ maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
 
 
 ## Local file
-WL = pd.read_excel(maindir + 'Flow_Output_Excel_files/'+site_name+'-working draft.xlsx',sheetname=site_name+'-all flow',index_col=0) ## Excel file
-WL['Flow_gpm'] = WL['Flow compound weir (gpm)']
+#WL = pd.read_excel(maindir + 'Flow_Output_Excel_files/'+site_name+'-working draft.xlsx',sheetname=site_name+'-all flow',index_col=0) ## Excel file
+#WL['Flow_gpm'] = WL['Flow compound weir (gpm)']
 
 ## GitHub
-WL = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Level_and_Flow_output/'+site_name+'_level_and_flow.csv')
+WL = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Level_and_Flow_output/'+site_name+'_level_and_flow.csv',index_col=0,parse_dates=True)
+def myfun(x):
+    print x
+    float(x)
+    return float(x)
+
+WL['Level_in'] = WL['Level_in'].apply(lambda x: myfun(x))
 
 #%%
 
