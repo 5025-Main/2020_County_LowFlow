@@ -12,10 +12,10 @@ import json
 import urllib2
 
 def zentra_json_parser(json_obj, logger_port):
+    #json_obj = readings_json
+    
     ## Start with blank dataframe for results
     results_df = pd.DataFrame()
-    ## define port number of CTD data
-    port_reference_number = logger_port+1 ## need to add 1 I think
     
     ## Test first row to get the Port Number
     sensors = pd.DataFrame(json_obj['device']['timeseries'][0]['configuration']['sensors'])
@@ -36,7 +36,7 @@ def zentra_json_parser(json_obj, logger_port):
         
         ## Extract measurement data using the defined port number (+1)
         try:
-            water_level_data = filter(lambda x: x[0]['description']=='Water Level',row[3:])[0]
+            water_level_data = filter(lambda x: x[0]['description']=='Water Level', row[4:])[0]
             meas_df = pd.DataFrame(water_level_data)
             ## Construct headers using units and parameter name
             meas_df.index =   meas_df['units'].str.strip(' ')+' '+meas_df['description']

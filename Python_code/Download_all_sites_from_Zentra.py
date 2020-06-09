@@ -21,7 +21,7 @@ if __name__ == "__main__":
     ## Get Master Site List
     site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/MasterSiteList.csv')
     ## Just one site
-    #site_list =  site_list[site_list['Site'] == 'SLR-095'] ###########
+    site_list =  site_list[site_list['Site'] == 'SDR-204A'] ###########
     
     ## Loop through all sites
     for site_name in site_list['Site']:

@@ -99,7 +99,7 @@ for Rain_gauge_name in Rain_gauge_names:
                                 print '\n'
                                 pass
                         rain_data_df = pd.DataFrame({'Rain_in':rain_vals},index=pd.to_datetime(times)).sort_index()
-                        rain_data_1hr = rain_data_df.resample('1H').sum()
+                        rain_data_1hr = rain_data_df.resample('1H').sum().fillna(0.) 
                         rain_data_1D = rain_data_df.resample('D').sum()
                         
                         rain_data_1hr.to_csv(maindir+'Rain_data/'+Rain_gauge_name+'_hourly.csv')
