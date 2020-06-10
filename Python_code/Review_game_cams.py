@@ -14,7 +14,7 @@ from PIL import Image
 import piexif
 
 
-site_name = 'CAR-072'
+site_name = 'SDG-072'
 
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
