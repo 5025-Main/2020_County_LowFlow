@@ -64,7 +64,7 @@ print 'datetimes and picture file names....DONE'
 #pics = [os.listdir(pic_dir+pic_folder)][0][5000:] ## You can limit photos here
 
 ## Select by date
-pics = pic_datetimes[pic_datetimes.index >= dt.datetime(2019,7,27,0,0)]['Pic filename']
+pics = pic_datetimes[pic_datetimes.index >= dt.datetime(2020,5,13,0,0)]['Pic filename']
 
 # now the real code :) 
 curr_pos = 0
