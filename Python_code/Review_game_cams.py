@@ -14,7 +14,7 @@ from PIL import Image
 import piexif
 
 
-site_name = 'CAR-059'
+site_name = 'CAR-072'
 
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
@@ -27,7 +27,7 @@ maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
 ## GitHub
 WL = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Level_and_Flow_output/'+site_name+'_level_and_flow.csv',index_col=0,parse_dates=True)
 def myfun(x):
-    print x
+    #print x
     float(x)
     return float(x)
 
@@ -51,10 +51,10 @@ pic_folder = '2020 '+site_name + '/'
 print ' compiling datetimes and picture file names....'
 pic_datetimes = pd.DataFrame()
 for pic in [os.listdir(pic_dir+pic_folder)][0]:
-    print pic
+    #print pic
     date_taken = get_pic_date(pic_dir+pic_folder+pic)
 
-    print date_taken
+    #print date_taken
     t = dt.datetime.strptime(date_taken, '%Y:%m:%d %H:%M:%S')
     pic_datetimes = pic_datetimes.append(pd.DataFrame({'Pic filename':pic,'Date Taken':t},index=[t]))
 print 'datetimes and picture file names....DONE'   
@@ -99,7 +99,7 @@ def key_event(e):
     ax1.set_title('SITE: '+site_name+' Datetime: '+t.strftime('%m/%d/%y %H:%M') +' Pic: '+pics[curr_pos])
     img=mpimg.imread(picture_file)
     # from now on you can use img as an image, but make sure you know what you are doing!
-    if site_name == 'CAR-070' or site_name=='SDR-064':
+    if site_name == '':
         rot_img=ndimage.rotate(img,degrees)
         imgplot=ax1.imshow(rot_img)
         
@@ -148,7 +148,7 @@ def key_event(e):
 
 
 
-fig1, (ax1,ax2) = plt.subplots(2,1,figsize=(16,11))
+fig1, (ax1,ax2) = plt.subplots(2,1,figsize=(16,11),gridspec_kw={'height_ratios': [2, 1]})
 
 fig1.canvas.mpl_connect('key_press_event', key_event)
 
