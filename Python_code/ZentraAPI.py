@@ -12,15 +12,16 @@ import json
 import urllib2
 
 def zentra_json_parser(json_obj, logger_port):
-    #json_obj = readings_json
+    json_obj = readings_json
     
     ## Start with blank dataframe for results
     results_df = pd.DataFrame()
     
     ## Test first row to get the Port Number
     sensors = pd.DataFrame(json_obj['device']['timeseries'][0]['configuration']['sensors'])
-    for row in json_obj['device']['timeseries'][0]['configuration']['values']:
-        #print row
+    for row in json_obj['device']['timeseries'][0]['configuration']['values'][0:3]:
+        print
+        print row
         ## Row values are:
         ## 0 timestamp in UTC
         ## 1 mrid?
@@ -110,6 +111,9 @@ def getDeviceReadings(site_name,start_time_loc):
     readings_json = json.loads(readings_str)
     # Readings are now contained in the 'readings_json' Python dictionary
     ## Data is read from JSON object using the zentra_json_parser defined above
+    with open(maindir+'logger.json', 'w') as outfile:
+        json.dump(readings_json, outfile)
+    
     print 'Formatting data....please wait...'
     df = zentra_json_parser(readings_json, logger_port)
     
