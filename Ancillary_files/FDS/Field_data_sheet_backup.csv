@@ -153,7 +153,7 @@
 151,2020-05-18 14:03:49,SDR-127,2020-05-04 12:30:00,Flowing,N/A,,1.8,30.0,1900
 152,2020-05-18 14:04:48,SDR-127,2020-05-04 12:30:00,Flowing,N/A,,1.8,25.0,1600
 153,2020-05-18 14:06:02,SDR-127,2020-05-04 12:30:00,Flowing,N/A,,1.8,12.0,800
-154,2020-05-18 14:12:19,SDR-064,2020-05-04 14:50:00,Dry,Site was dry. Measurements below are all zero just to populate the required fields. ,,0.0,0.0,0
+154,2020-05-18 14:12:19,SDR-064,2020-05-04 14:50:00,Dry,Site was dry. Measurements below are all zero just to populate the required fields. ,,,60.0,0
 155,2020-05-18 14:20:14,SDR-064A,2020-05-04 14:55:00,Leaking,"Leaking, called out by Joanna, repaired. level was at the v-notch",,0.0,0.0,0
 156,2020-05-18 14:26:19,SDR-064D,2020-05-04 15:05:00,Leaking,"Leaking, repaired. ponded at the v notch",,0.0,0.0,0
 157,2020-05-18 14:27:21,SDR-064B,2020-05-04 15:10:00,Flowing,N/A,,0.6,60.0,280
@@ -196,7 +196,7 @@
 194,2020-05-19 16:17:49,SDG-085G,2020-05-19 15:05:00,Flowing,None,,0.5,28.83,140
 195,2020-05-19 16:21:09,SDG-085,2020-05-19 16:20:00,Flowing,None,https://drive.google.com/open?id=1tL8hglvt-5_tl977Z8Yqt0VVYP7Jv9VC,5.9,3.37,2350
 196,2020-05-19 16:22:35,SDG-084,2020-05-19 16:20:00,Flowing,None,,,1.94,1550
-197,2020-05-22 07:26:58,SDR-064,2020-05-20 09:28:00,Dry,no level,https://drive.google.com/open?id=1jkPrvJDcAetDPthSu4LeP-HmT26VkSOn,0.0,0.0,0
+197,2020-05-22 07:26:58,SDR-064,2020-05-20 09:28:00,Dry,no level,https://drive.google.com/open?id=1jkPrvJDcAetDPthSu4LeP-HmT26VkSOn,,60.0,0
 198,2020-05-22 07:30:07,SDR-064A,2020-05-20 09:28:00,Flowing,light flow,https://drive.google.com/open?id=1er-fxRiZhJihkXMev8g9mAKGiqpLYB83,0.4,60.0,190
 199,2020-05-22 07:33:02,SDR-064B,2020-05-20 09:37:00,Ponded,no flow,https://drive.google.com/open?id=1j8i8RPm_1UfDpkfwPLOasNptNUT0AtnQ,0.0,60.0,0
 200,2020-05-22 07:35:48,SDR-064D,2020-05-20 09:39:00,Ponded,no flow,https://drive.google.com/open?id=1Y8soriwoBRXQkv5IM6wY1S1gCb-GtsAs,0.0,60.0,0
