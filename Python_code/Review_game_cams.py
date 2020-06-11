@@ -14,8 +14,8 @@ from PIL import Image
 import piexif
 
 
-site_name = 'SDR-036'
-
+site_name = 'SDR-041'
+pic_start_time = dt.datetime(2020,5,1,0,0)
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
 
@@ -64,7 +64,7 @@ print 'datetimes and picture file names....DONE'
 #pics = [os.listdir(pic_dir+pic_folder)][0][5000:] ## You can limit photos here
 
 ## Select by date
-pics = pic_datetimes[pic_datetimes.index >= dt.datetime(2020,5,28,0,0)]['Pic filename']
+pics = pic_datetimes[pic_datetimes.index >= pic_start_time]['Pic filename']
 
 # now the real code :) 
 curr_pos = 0
@@ -96,7 +96,7 @@ def key_event(e):
     
     ## Image
     ax1.cla()
-    ax1.set_title('SITE: '+site_name+' Datetime: '+t.strftime('%m/%d/%y %H:%M') +' Pic: '+pics[curr_pos])
+    ax1.set_title('SITE: '+site_name+' Datetime: '+t.strftime('%m/%d/%y %H:%M') +' Pic: '+pics[curr_pos],color='w')
     img=mpimg.imread(picture_file)
     # from now on you can use img as an image, but make sure you know what you are doing!
     if site_name == '':
@@ -155,13 +155,13 @@ fig1.canvas.mpl_connect('key_press_event', key_event)
 picture_file = pic_dir + pic_folder+ pics[curr_pos]
 date_taken = get_pic_date(pic_dir+pic_folder+pic)
 t = dt.datetime.strptime(date_taken, '%Y:%m:%d %H:%M:%S')
-t_round5 = dt.datetime(t.year, t.month, t.day, t.hour,5*(t.minute // 5),0)
+t_round5 = dt.datetime(t.year, t.month, t.day, t.hour,5*(t.minute // 5)+5,0) ## round times up to nearest 5 min
 flow_at_image = WL.ix[t_round5,'Flow_gpm']
 level_at_image = WL.ix[t_round5,'Level_in']
 
 ## Image
 #ax1 = fig1.axes[0]
-ax1.set_title('SITE: '+site_name+' Datetime: '+t.strftime('%m/%d/%y %H:%M'))
+ax1.set_title('SITE: '+site_name+' Datetime: '+t.strftime('%m/%d/%y %H:%M'),color='w')
 img=mpimg.imread(picture_file)
 # from now on you can use img as an image, but make sure you know what you are doing!
 if site_name in ['SDR-127']:
