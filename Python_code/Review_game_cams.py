@@ -15,7 +15,7 @@ import piexif
 
 
 site_name = 'SDR-127'
-pic_start_time = dt.datetime(2020,5,11,0,0)
+pic_start_time = dt.datetime(2020,5,20,0,0)
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
 
@@ -31,7 +31,7 @@ def myfun(x):
     float(x)
     return float(x)
 
-WL['Level_in'] = WL['Level_in'].apply(lambda x: myfun(x))
+#WL['Level_in'] = WL['Level_in'].apply(lambda x: myfun(x))
 
 #%%
 
