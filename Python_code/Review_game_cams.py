@@ -14,8 +14,8 @@ from PIL import Image
 import piexif
 
 
-site_name = 'SDR-098'
-pic_start_time = dt.datetime(2020,5,1,0,0)
+site_name = 'SDR-127'
+pic_start_time = dt.datetime(2020,5,11,0,0)
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
 
@@ -65,14 +65,10 @@ print 'datetimes and picture file names....DONE'
 
 ## Select by date
 pics = pic_datetimes[pic_datetimes.index >= pic_start_time]['Pic filename']
-
 # now the real code :) 
 curr_pos = 0
-
 def key_event(e):
-    
     global curr_pos
-
     if e.key == "right":
         curr_pos = curr_pos + 1
     elif e.key == "left":
@@ -81,7 +77,6 @@ def key_event(e):
         return
     curr_pos = curr_pos % len(pics)
     print 'key event '+str(curr_pos)
-  
     ## Select pic
     picture_file = pic_dir + pic_folder+ pics[curr_pos]
     print 'Pic file: '+pics[curr_pos]
@@ -93,25 +88,26 @@ def key_event(e):
     ## Get flow and level data at time of pic
     flow_at_image = WL.ix[t_round5,'Flow_gpm']
     level_at_image = WL.ix[t_round5,'Level_in']
-    
     ## Image
     ax1.cla()
     ax1.set_title('SITE: '+site_name+' Datetime: '+t.strftime('%m/%d/%y %H:%M') +' Pic: '+pics[curr_pos],color='w')
     img=mpimg.imread(picture_file)
     # from now on you can use img as an image, but make sure you know what you are doing!
-    if site_name == '':
+    if site_name in []:
+        degrees = -90
         rot_img=ndimage.rotate(img,degrees)
         imgplot=ax1.imshow(rot_img)
-        
-    else:
+    elif site_name in []:
+        degrees = 90
+        rot_img=ndimage.rotate(img,degrees)
+        imgplot=ax1.imshow(rot_img)    
+    else: 
         imgplot=ax1.imshow(img)
     plt.show()
-    
     ## Plot flow data
     ax2.cla()
     ax2.plot_date(WL.index,WL['Flow_gpm'],marker='None',ls='-',c='b',label='Flow compound weir')
     ax2.plot_date(t_round5, flow_at_image,marker='o',ls='None',c='b',label='Flow at picture='+"%.3f"%flow_at_image)
-    
     ## Plot Level data   
     ax2_2.cla()
     if level_at_image <0 or np.isnan(level_at_image):
@@ -134,15 +130,11 @@ def key_event(e):
             ax2.set_ylim(-3.,3.)
     else:
         ax2.set_ylim(flow_over_interval.min()*0.9,flow_over_interval.max()*1.1)
-        
     ax2.xaxis.set_major_formatter(mpl.dates.DateFormatter('%A \n %m/%d/%y %H:%M'))
-
     ax2.set_ylabel('Flow (gpm)',color='w'), ax2_2.set_ylabel('Level (inches)',color='w')
-
     ## Legends, they're all around
     ax2.legend(loc='upper left')
     ax2_2.legend(loc='upper right')
-        
     fig1.canvas.draw()
     return
 
@@ -164,7 +156,7 @@ level_at_image = WL.ix[t_round5,'Level_in']
 ax1.set_title('SITE: '+site_name+' Datetime: '+t.strftime('%m/%d/%y %H:%M'),color='w')
 img=mpimg.imread(picture_file)
 # from now on you can use img as an image, but make sure you know what you are doing!
-if site_name in ['SDR-127']:
+if site_name in []:
     degrees = -90
     rot_img=ndimage.rotate(img,degrees)
     imgplot=ax1.imshow(rot_img)
