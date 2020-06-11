@@ -14,7 +14,7 @@ from PIL import Image
 import piexif
 
 
-site_name = 'SDR-041'
+site_name = 'SDR-064'
 pic_start_time = dt.datetime(2020,5,1,0,0)
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
