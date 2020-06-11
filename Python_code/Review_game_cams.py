@@ -14,7 +14,7 @@ from PIL import Image
 import piexif
 
 
-site_name = 'SDG-084'
+site_name = 'SDR-036'
 
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
@@ -64,7 +64,7 @@ print 'datetimes and picture file names....DONE'
 #pics = [os.listdir(pic_dir+pic_folder)][0][5000:] ## You can limit photos here
 
 ## Select by date
-pics = pic_datetimes[pic_datetimes.index >= dt.datetime(2020,5,1,0,0)]['Pic filename']
+pics = pic_datetimes[pic_datetimes.index >= dt.datetime(2020,5,28,0,0)]['Pic filename']
 
 # now the real code :) 
 curr_pos = 0
@@ -152,7 +152,6 @@ fig1, (ax1,ax2) = plt.subplots(2,1,figsize=(16,11),gridspec_kw={'height_ratios':
 fig1.patch.set_facecolor('#000000')
 fig1.canvas.mpl_connect('key_press_event', key_event)
 
-
 picture_file = pic_dir + pic_folder+ pics[curr_pos]
 date_taken = get_pic_date(pic_dir+pic_folder+pic)
 t = dt.datetime.strptime(date_taken, '%Y:%m:%d %H:%M:%S')
@@ -215,12 +214,10 @@ else:
 ## X axis date format
 ax2.xaxis.set_major_formatter(mpl.dates.DateFormatter('%A \n %m/%d/%y %H:%M'))
 
-ax1.spines['bottom'].set_color('w')
-ax1.spines['top'].set_color('w')
-ax1.xaxis.label.set_color('w')
-ax1.yaxis.label.set_color('w')
+ax2.xaxis.label.set_color('w')
 ax2.yaxis.label.set_color('w')
-ax1.tick_params(axis='x', colors='w')
+ax2.yaxis.label.set_color('w')
 ax2.tick_params(axis='x', colors='w')
+ax2.tick_params(axis='y', colors='w'), ax2_2.tick_params(axis='y', colors='w')
 
 plt.tight_layout()
