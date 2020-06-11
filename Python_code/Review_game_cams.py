@@ -152,7 +152,8 @@ fig1.patch.set_facecolor('#000000')
 fig1.canvas.mpl_connect('key_press_event', key_event)
 
 picture_file = pic_dir + pic_folder+ pics[curr_pos]
-date_taken = get_pic_date(pic_dir+pic_folder+pic)
+date_taken = get_pic_date(picture_file)
+
 t = dt.datetime.strptime(date_taken, '%Y:%m:%d %H:%M:%S')
 t_round5 = dt.datetime(t.year, t.month, t.day, t.hour,5*(t.minute // 5)+5,0) ## round times up to nearest 5 min
 flow_at_image = WL.ix[t_round5,'Flow_gpm']
@@ -179,7 +180,6 @@ plt.show()
 ax2 = fig1.axes[1]
 ax2.plot_date(WL.index,WL['Flow_gpm'],marker='None',ls='-',c='b',label='Flow compound weir')
 ax2.plot_date(t_round5, flow_at_image,marker='o',ls='None',c='b',label='Flow at picture='+"%.3f"%flow_at_image)
-
 
 ## Level
 ax2_2 = ax2.twinx()
