@@ -14,8 +14,8 @@ from PIL import Image
 import piexif
 
 
-site_name = 'SDR-127'
-pic_start_time = dt.datetime(2020,5,20,0,0)
+site_name = 'SLR-045'
+pic_start_time = dt.datetime(2020,5,1,0,0)
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
 
@@ -58,13 +58,15 @@ for pic in [os.listdir(pic_dir+pic_folder)][0]:
     t = dt.datetime.strptime(date_taken, '%Y:%m:%d %H:%M:%S')
     pic_datetimes = pic_datetimes.append(pd.DataFrame({'Pic filename':pic,'Date Taken':t},index=[t]))
 print 'datetimes and picture file names....DONE'   
-
+# Limit to dates with water level
+pic_datetimes = pic_datetimes.ix[WL.index[0]:WL.index[-1]]
 
 # define your images to be plotted
 #pics = [os.listdir(pic_dir+pic_folder)][0][5000:] ## You can limit photos here
 
 ## Select by date
 pics = pic_datetimes[pic_datetimes.index >= pic_start_time]['Pic filename']
+
 # now the real code :) 
 curr_pos = 0
 def key_event(e):
@@ -124,12 +126,17 @@ def key_event(e):
     ## Get flow data over a 24 hour surrounding period
     flow_over_interval = WL.ix[t_round5 - dt.timedelta(hours=8):t_round5 + dt.timedelta(hours=8),'Flow_gpm']
     ## y limits
-    if flow_over_interval.min() == 0. and flow_over_interval.max() > 0.:
-        ax2.set_ylim(-1.,flow_over_interval.max()*1.1)
-    elif flow_over_interval.min() == 0. and flow_over_interval.max() == 0.:
-            ax2.set_ylim(-3.,3.)
-    else:
-        ax2.set_ylim(flow_over_interval.min()*0.9,flow_over_interval.max()*1.1)
+    try:
+        if flow_over_interval.min() == 0. and flow_over_interval.max() > 0.:
+            
+                ax2.set_ylim(-1.,flow_over_interval.max()*1.1)
+            
+        elif flow_over_interval.min() == 0. and flow_over_interval.max() == 0.:
+                ax2.set_ylim(-3.,3.)
+        else:
+            ax2.set_ylim(flow_over_interval.min()*0.9,flow_over_interval.max()*1.1)
+    except:
+            pass
     ax2.xaxis.set_major_formatter(mpl.dates.DateFormatter('%A \n %m/%d/%y %H:%M'))
     ax2.set_ylabel('Flow (gpm)',color='w'), ax2_2.set_ylabel('Level (inches)',color='w')
     ## Legends, they're all around
