@@ -186,8 +186,8 @@
 184,2020-05-15 10:56:01,SDR-041,2020-05-14 10:17:00,Flowing,flowing,https://drive.google.com/open?id=1PnlUVd86To0qcE-3FBlxV-DoGAb-LNhZ,3.7,20.7,9000
 185,2020-05-15 10:58:23,SDR-130,2020-05-14 10:33:00,Ponded,"looks like no flow in some time, check data for peaks to establish if there is a leak",https://drive.google.com/open?id=1EDqpsATI82qIbUTDZexvmQuVPzs2Hfpg,-11.0,60.0,0
 186,2020-05-15 11:00:21,SDR-036,2020-05-14 10:42:00,Flowing,flowing no issues,https://drive.google.com/open?id=1QINLhz3i7xB73KObrRzPzMaGOSntAXaH,2.7,13.14,3000
-187,2020-05-15 11:01:47,SDR-204A,2020-05-14 10:59:00,Flowing,lite flow,,2.0,60.0,8800
-188,2020-05-15 11:03:56,SDR-203A,2020-05-14 10:59:00,Ponded,"no flow, another consultant was there before us and said there was trickle before we arrived",,0.0,60.0,0
+187,2020-05-15 11:01:47,SDR-204A,2020-05-14 11:00:00,Flowing,lite flow,,2.0,60.0,8800
+188,2020-05-15 11:03:56,SDR-203A,2020-05-14 10:55:00,Ponded,"no flow, another consultant was there before us and said there was trickle before we arrived",,0.0,60.0,0
 189,2020-05-15 11:07:11,SWT-235,2020-05-14 11:38:00,Flowing,looks good,https://drive.google.com/open?id=1JdQUwnvYmXPtKA7m6WoteZouCB3PGY3i,3.0,12.0,3900
 190,2020-05-15 11:09:09,SWT-162,2020-05-14 12:00:00,Ponded,"possible leak, repaired with mortar",https://drive.google.com/open?id=1aqgoCk2BfjlJDPChpdtXyCrmX5Ik7aGU,-2.0,60.0,0
 191,2020-05-15 11:11:34,SWT-233,2020-05-14 12:40:00,Ponded,no flow,https://drive.google.com/open?id=1rc874Rd6UWJZKAX51iRK8lmmep1KSuch,0.0,60.0,0
@@ -232,7 +232,7 @@
 230,2020-05-22 08:01:58,SDR-204A,2020-05-20 12:02:00,Flowing,flowing,https://drive.google.com/open?id=165LN9y-i2RtIykB9PHQNhAq3dfqUDM5n,2.5,29.81,3900
 231,2020-05-22 08:08:27,SDR-064,2020-05-21 08:50:00,Ponded,level go down after flow due to seeping in to sand,"https://drive.google.com/open?id=1gWDLrD4JFAQ3k5DCghxEpJLMMpE1lHH8, https://drive.google.com/open?id=109_TjJQNt_4drX6JrV3NhlUcGPNwuffD",-1.5,60.0,0
 232,2020-05-22 08:11:18,SDR-064B,2020-05-21 08:53:00,Flowing,light flow,,0.3,60.0,100
-233,2020-05-22 08:16:20,SDR-203A,2020-05-21 09:18:00,Flowing,light flow,https://drive.google.com/open?id=1Kkq7RSabtkYkfKT14UfKuEmgHbZ2A4t5,0.1,60.0,15
+233,2020-05-22 08:16:20,SDR-203A,2020-05-21 09:20:00,Flowing,light flow,https://drive.google.com/open?id=1Kkq7RSabtkYkfKT14UfKuEmgHbZ2A4t5,0.1,60.0,15
 234,2020-05-22 08:18:10,SDR-036,2020-05-21 09:38:00,Flowing,flowing,,2.7,15.87,2700
 235,2020-05-22 08:25:29,SWT-235,2020-05-21 10:17:00,Flowing,flowing,https://drive.google.com/open?id=1A2_mAI37F8xjPeIt70bl0X5OHNiRJmU2,3.5,8.7,3400
 236,2020-05-22 08:28:12,SWT-162,2020-05-21 10:37:00,Ponded,"no flow ponded, possible small seepage in pipes",https://drive.google.com/open?id=1TXqtAaKFSzU7oAVMdJWdPK894jouQjBk,0.0,60.0,0
@@ -280,7 +280,7 @@
 278,2020-05-22 17:01:01,SLR-095,2020-05-22 17:00:00,Flowing,None,,3.5,7.0,2650
 279,2020-05-22 21:13:34,SLR-095,2020-05-22 17:00:00,Flowing,None,,3.5,7.0,2650
 280,2020-05-27 06:58:59,SDR-204A,2020-05-26 09:55:00,Flowing,"flowing, lots of mosquitoes ",https://drive.google.com/open?id=1lNN8j2XWBtsmtfNED-ZrEfTOsPY9C1p9,2.5,30.0,4000
-281,2020-05-27 07:02:14,SDR-203A,2020-05-26 10:01:00,Flowing,light flow,https://drive.google.com/open?id=1TmJKCfcXI9-mGD3aR3WGFPxgpQkaGbka,0.3,60.0,30
+281,2020-05-27 07:02:14,SDR-203A,2020-05-26 10:05:00,Flowing,light flow,https://drive.google.com/open?id=1TmJKCfcXI9-mGD3aR3WGFPxgpQkaGbka,0.3,60.0,30
 282,2020-05-27 07:04:41,SDR-036,2020-05-26 10:24:00,Flowing,flowing ,https://drive.google.com/open?id=1AFYWBhNJDdMWbQTRmuFWhnKpxYW9b1by,2.5,26.5,3900
 283,2020-05-27 07:07:15,SDR-127B,2020-05-26 10:48:00,Flowing,flowing,https://drive.google.com/open?id=1Q691KcfQunX1E6hrx7o9AatQot1JyDZG,1.7,30.0,1900
 284,2020-05-27 07:10:02,SDR-127,2020-05-26 11:03:00,Flowing,"flowing, no blockage ",,1.2,60.0,1450
@@ -421,3 +421,26 @@
 419,2020-06-12 12:04:38,CAR-072C,2020-06-10 15:05:00,Flowing,N/A,,2.1,38.0,3230
 420,2020-06-12 12:05:36,CAR-072C,2020-06-10 15:09:00,Flowing,N/A,,2.0,30.0,2650
 421,2020-06-12 12:07:10,CAR-072C,2020-06-10 15:12:00,Flowing,Cleared sediment around probe,https://drive.google.com/open?id=1zMEaicbSRfg_4xgh7bhFxrq_dFRXHiTv,2.0,30.0,2650
+422,2020-06-12 18:29:17,SDR-064A,2020-06-01 08:51:00,Flowing,flowing,https://drive.google.com/open?id=11NyEPHG068Zf61NAnGxkanl58mVrxxR6,0.4,60.0,70
+423,2020-06-12 18:32:59,SDR-064B,2020-06-11 08:59:00,Ponded,level with V,https://drive.google.com/open?id=1EoCnnkgtnWtbZwmpEUe8sQTsn9HJlaer,0.0,60.0,0
+424,2020-06-12 18:39:54,SDR-064D,2020-06-11 09:01:00,Flowing,"flowing, set new probe next to p/3 - p/4",https://drive.google.com/open?id=1LFvb50hQAiw4E1ztsV0AjIXcBr313PEH,1.0,30.0,500
+425,2020-06-12 18:43:12,SDR-064C,2020-06-11 09:02:00,Ponded,-5 level due to leaks in pavement ,https://drive.google.com/open?id=1phdoDt3o-l_FyvMOERcjhqQuLCXgtbfq,-6.5,60.0,0
+426,2020-06-12 18:46:25,SDR-098,2020-06-11 10:33:00,Ponded,"zero, no flow.","https://drive.google.com/open?id=1mC6H6na7ejPjCIgtxthXECru4jK1yRpn, https://drive.google.com/open?id=16YdOKYhcNTRtpkA9qswsQXsYYy9a9iwq",0.0,60.0,0
+427,2020-06-12 18:49:19,SDR-041,2020-06-11 10:44:00,Flowing,flowing,https://drive.google.com/open?id=1aHoWwWCLDm2xS-Lul-oBum61fEOPnC8U,3.5,21.0,7000
+428,2020-06-12 18:51:49,SDR-041,2020-06-11 10:44:00,Flowing,flowing,https://drive.google.com/open?id=16YB0ShdhgOWq8OaAJ90VvIn3V_8rmeWz,3.5,21.31,7000
+429,2020-06-12 18:55:48,SDR-130,2020-06-11 11:02:00,Ponded,- due to leaks in concrete seams.,https://drive.google.com/open?id=1AiCMJY_z8KNHRqTl8gA3QMf480N3VwzF,-2.5,60.0,0
+430,2020-06-12 18:57:57,SDR-127B,2020-06-11 11:21:00,Flowing,flowing,https://drive.google.com/open?id=1Y0gA2shV5fZaGWVQY3dVq-Ll82rCEA0E,1.3,60.0,1600
+431,2020-06-12 19:01:00,SDR-127,2020-06-11 11:34:00,Flowing,flowing,https://drive.google.com/open?id=1CEx07Ez8bbiqhneubg9KxXthdrvKa_Ha,1.5,60.0,2000
+432,2020-06-12 19:26:01,SDR-064,2020-06-12 09:32:00,Flowing,lastof flow ,https://drive.google.com/open?id=1iPqbuqLr0YZcQt3e0gmsKLBVuEIpCs4-,0.3,60.0,20
+433,2020-06-12 19:28:44,SDR-064D,2020-06-12 09:52:00,Flowing,"light flow, installing comparison probe",,0.3,60.0,0
+434,2020-06-12 19:30:55,SDR-204A,2020-06-12 10:55:00,Flowing,"flowing, install comparison probe",https://drive.google.com/open?id=1byzwKCM67yUjnDZ-U8cUcrgGsWblpzxC,2.0,30.0,2000
+435,2020-06-12 19:33:50,SDR-203A,2020-06-12 11:32:00,Flowing,"flowing, last rain caused leak, replace  breakaway and seal",https://drive.google.com/open?id=1w2mDVDiOvbykAGTkoGDgZ4vzl64CaSpC,0.5,60.0,140
+436,2020-06-12 19:39:29,SWT-235,2020-06-12 12:06:00,Flowing,flowing,,3.0,13.87,3900
+437,2020-06-12 19:43:32,SWT-162,2020-06-12 12:33:00,Flowing,"sediment, seems to be from pool back flush or sediment filter change",https://drive.google.com/open?id=1btmozWJk4OLPsx8_gWiMIiB-hJUlgHEI,3.1,10.15,3200
+438,2020-06-12 19:45:46,SWT-235,2020-06-12 12:06:00,Flowing,flowing,,3.0,13.87,3900
+439,2020-06-12 19:51:41,SWT-068,2020-06-12 13:10:00,Flowing,"flowing, last rain, cased erosions, re packed earthen wall  ","https://drive.google.com/open?id=17p9-vpBOoXcMNUUeN6CpzW89M0OqGSQx, https://drive.google.com/open?id=12LdhGBJWVzeEvkpcgy42KTAjEnnFogd5, https://drive.google.com/open?id=1b-wlA1CLiTsWaKi8CCDr0hmRW8EURabu",7.0,4.68,9300
+440,2020-06-12 19:56:00,SWT-030I,2020-06-12 13:29:00,Ponded,"level , no flow",https://drive.google.com/open?id=18x2EqXRtWE9d8kO61Q3U4MMe38KPtpNu,0.0,60.0,0
+441,2020-06-12 19:59:07,SWT-068,2020-06-12 13:10:00,Flowing,"flowing, small trickle erosion sections from last rain, repair as necessary  ",https://drive.google.com/open?id=1vBRrqhoxw8HfemyGCmwF4OryOEMVDwdA,4.68,4.68,9300
+442,2020-06-12 20:01:48,SWT-030,2020-06-12 13:29:00,Flowing,flowing,https://drive.google.com/open?id=14hy4mqdtrxUocHsW-S0P7vAhhUj7CE5r,451.0,6.51,4780
+443,2020-06-12 20:05:28,SWT-233,2020-06-12 13:56:00,Ponded,"smells like sewage, leaks in pipe seems",https://drive.google.com/open?id=1Qn9y75xIl7TVY3-c4smTKlUK0vyHkc4D,-2.0,60.0,0
+444,2020-06-12 20:09:01,SWT-019,2020-06-12 14:15:00,Ponded,"sediment from pool filter packed over sensor, clean around sensor","https://drive.google.com/open?id=1BDlQLrmGucxU3ONR_Sy8nznTCJIWhPh5, https://drive.google.com/open?id=1EgNtogwgeoAL7s4rSSvYD-93dnMfF71n, https://drive.google.com/open?id=1yc954Dxmwx6NOfPoRw9VJJvHmLQ-HOrS",0.0,60.0,0
