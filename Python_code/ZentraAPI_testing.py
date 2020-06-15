@@ -21,7 +21,7 @@ start_time_loc = mytz.normalize(mytz.localize(start_time_loc,is_dst=True))
 site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/MasterSiteList.csv')
 
 ## Just one site
-site_list =  site_list[site_list['Site'] == 'SLR-045B'] ###########
+site_list =  site_list[site_list['Site'] == 'SDR-130'] ###########
 
 ## Loop through all sites
 for site_name in site_list['Site']:
