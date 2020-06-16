@@ -14,8 +14,8 @@ from PIL import Image
 import piexif
 
 
-site_name = 'SDR-130'
-pic_start_time = dt.datetime(2020,5,25,0,0)
+site_name = 'SDR-204A'
+pic_start_time = dt.datetime(2020,5,1,0,0)
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
 
@@ -59,6 +59,7 @@ for pic in [os.listdir(pic_dir+pic_folder)][0]:
     pic_datetimes = pic_datetimes.append(pd.DataFrame({'Pic filename':pic,'Date Taken':t},index=[t]))
 print 'datetimes and picture file names....DONE'   
 # Limit to dates with water level
+pic_datetimes = pic_datetimes.sort()
 pic_datetimes = pic_datetimes.ix[WL.index[0]:WL.index[-1]]
 
 # define your images to be plotted
