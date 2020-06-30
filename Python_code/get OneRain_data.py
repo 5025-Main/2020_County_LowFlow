@@ -26,8 +26,8 @@ Rain_gauge_names = Rain_gauge_info.index.unique()
 
 
 ######### UPDATE HERE ###################
-start_date, end_date = '2020-05-01', '2020-05-15' 
-start_date, end_date = '2020-05-01', dt.date.today().strftime('%Y-%m-%d') ## for current day: dt.date.today().strftime('%Y-%m-%d')
+#start_date, end_date = '2020-05-01', '2020-06-29' 
+start_date, end_date = '2020-06-01', dt.date.today().strftime('%Y-%m-%d') ## for current day: dt.date.today().strftime('%Y-%m-%d')
 time_bin  = '3600' #seconds. Daily=86400, Hourly=3600
 #######################################
 
@@ -123,28 +123,31 @@ for Rain_gauge_name in Rain_gauge_names:
 #Place newly downloaded rain data in a second folder in the same Raw data directory.
 #The script will combine the files with the same names from each folder and output them to the raw data directory.
 
-raindir = maindir+'0 - Rain Data/'+'Raw Data/'
-Site_list = ['Bonita', 'Bonsall', 'Cactus_County_Park',  'Couser_Canyon', 'Deer_Springs', 'El_Camino_del_Norte', 'Flinn_Springs_County_Park', 'Granite_Hills', 'La_Mesa', 'Lake_Hodges', 'Los_Coches', 'Rainbow_County_Park', 'Rancho_Bernardo', 'Roads_Div_I', 'San_Marcos_CRS']
-new_rain_files = raindir+'Monthly deliverable 07_31_2019/'
-old_rain_files = raindir+'Monthly deliverable 08_31_2019/'
+raindir = maindir+'Rain_data/'
 
-for SITE in Site_list:
+old_rain_files = raindir+'May rain data/'
+new_rain_files = raindir+'June rain data/'
+
+
+for old_filename in os.listdir(old_rain_files):
+    print old_filename
     rain_panda = pd.DataFrame()
-    ## new file
-    new_filename = [s for s in os.listdir(new_rain_files) if SITE in s][0]
-    new_file = pd.read_excel(new_rain_files + new_filename, index_col = 'Reading')
-    print(new_filename)
     ## old file
-    old_filename = [s for s in os.listdir(old_rain_files) if SITE in s][0]
-    old_file = pd.read_excel(old_rain_files  + old_filename, index_col = 'Reading')
+    old_file = pd.read_csv(old_rain_files  + old_filename, index_col = 0)
     print(old_filename)
+    ## new file
+    new_filename = [f for f in os.listdir(new_rain_files) if f == old_filename][0]
+    new_file = pd.read_csv(new_rain_files + new_filename, index_col = 0)
+    print(new_filename)
+    
+    
     rain_panda = new_file.append(old_file)
-    rain_panda = rain_panda[rain_panda.duplicated()==False]
+    rain_panda['idx']=rain_panda.index
+    rain_panda = rain_panda.drop_duplicates(subset='idx')
     rain_panda = rain_panda.sort_index()
 #    print(rain_panda)
-    writer = pd.ExcelWriter(raindir+new_filename, engine='xlsxwriter')
-    rain_panda.to_excel(writer,sheet_name='Data')
-    writer.save()
+    rain_panda[['Rain_in']].to_csv(raindir+new_filename)
+
     
     
     
@@ -152,21 +155,22 @@ for SITE in Site_list:
 #%% Plot rain data
 
 
+
 raindir = maindir+'Rain_data/'
-daily_rain_files = maindir+'Rain_data/'
+rain_files = [f for f in os.listdir(maindir+'Rain_data/') if f.endswith('daily.csv')==True]
 
 ## Data from  https://sandiego.onerain.com/rain.php
 
 #for one gauge
 #gauge_name = 'Flinn_Springs'
-#rainfiles = [s for s in os.listdir(daily_rain_files) if gauge_name in s]
-
+#rainfiles = [f for f in os.listdir(maindir+'Rain_data/') if f.endswith('daily.csv')==True]
+#rainfiles = [f for f in os.listdir(maindir+'Rain_data/') if f.endswith('hourly.csv')==True]
 #for all gauges
 rainfiles = [s for s in os.listdir(daily_rain_files) if s.endswith('.csv')]
 
 fig, ax = plt.subplots(1,1,figsize=(12,8))
 
-for rainfile in rainfiles:
+for rainfile in rain_files:
     print ('')
     print 'Precip file: '+rainfile
     rain = pd.read_csv(daily_rain_files+rainfile,index_col=0)
