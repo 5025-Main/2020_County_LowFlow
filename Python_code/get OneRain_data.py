@@ -153,27 +153,21 @@ for old_filename in os.listdir(old_rain_files):
     
 
 #%% Plot rain data
-
-
-
-raindir = maindir+'Rain_data/'
-rain_files = [f for f in os.listdir(maindir+'Rain_data/') if f.endswith('daily.csv')==True]
-
 ## Data from  https://sandiego.onerain.com/rain.php
-
+raindir = maindir+'Rain_data/'
+#for all gauges
+rain_files = [f for f in os.listdir(maindir+'Rain_data/') if f.endswith('daily.csv')==True]
 #for one gauge
 #gauge_name = 'Flinn_Springs'
 #rainfiles = [f for f in os.listdir(maindir+'Rain_data/') if f.endswith('daily.csv')==True]
 #rainfiles = [f for f in os.listdir(maindir+'Rain_data/') if f.endswith('hourly.csv')==True]
-#for all gauges
-rainfiles = [s for s in os.listdir(daily_rain_files) if s.endswith('.csv')]
 
 fig, ax = plt.subplots(1,1,figsize=(12,8))
 
 for rainfile in rain_files:
     print ('')
     print 'Precip file: '+rainfile
-    rain = pd.read_csv(daily_rain_files+rainfile,index_col=0)
+    rain = pd.read_csv(raindir+rainfile,index_col=0)
     rain.index = pd.to_datetime(rain.index)
     ## Resample to regular interval and fill non-data with zeros
     #rain = rain.resample('15Min').sum()
