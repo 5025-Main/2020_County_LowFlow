@@ -14,15 +14,15 @@ from matplotlib.dates import DateFormatter
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'#+'test/'
 # Format for UTC
 mytz = timezone('US/Pacific')
-start_time_loc = dt.datetime(2020,5,1,0,0)
+start_time_loc = dt.datetime(2020,5,29,18,15)
 start_time_loc = mytz.normalize(mytz.localize(start_time_loc,is_dst=True))
 ## Get Master Site List
 site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/MasterSiteList.csv')
 ## Just one site
-#site_list =  site_list[site_list['Site'] == 'SWT-019'] ###########
+site_list =  site_list[site_list['Site'] == 'SLR-095'] ###########
 
 ## Loop through all sites
-for site_name in site_list['Site'][40:41]:
+for site_name in site_list['Site']:
     print
     print site_name
     try:
@@ -98,7 +98,7 @@ for site_name in site_list['Site'][40:41]:
         ## Extract measurement data using the defined port number (+1)
         try:
             site_sensor_position = 0
-            if site_name in ['SLR-045B','SDR-204A']:
+            if site_name in ['SLR-045B','SDR-204A','SLR-095']:
                 #print 'Sensor for '+site_name+' is in second plug position'
                 site_sensor_position+=1
             water_level_data = filter(lambda x: x[0]['description']=='Water Level', row[3:])[site_sensor_position] 
@@ -140,7 +140,8 @@ for site_name in site_list['Site'][40:41]:
     fig,ax=plt.subplots(1,1,figsize=(12,6))
     ax.set_title(site_name,fontsize=14,fontweight='bold')
     ax.plot_date(pd.to_datetime(results_df.index),results_df['in Water Level'],marker='None',ls='-',c='blue')
-    ax.plot_date(pd.to_datetime(WL_existing.index),WL_existing['in Water Level'],marker='None',ls='-',c='grey')
+    if len(WL_existing)>0:
+        ax.plot_date(pd.to_datetime(WL_existing.index),WL_existing['in Water Level'],marker='None',ls='-',c='grey')
     ax.legend()
     ax.xaxis.set_major_formatter(DateFormatter('%m/%d/%Y'))# %H:%M'))
     ## Save raw data to csv
