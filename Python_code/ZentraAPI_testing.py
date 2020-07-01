@@ -22,7 +22,7 @@ site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County
 #site_list =  site_list[site_list['Site'] == 'SWT-019'] ###########
 
 ## Loop through all sites
-for site_name in site_list['Site'][4:5]:
+for site_name in site_list['Site'][40:41]:
     print
     print site_name
     try:
@@ -99,7 +99,7 @@ for site_name in site_list['Site'][4:5]:
         try:
             site_sensor_position = 0
             if site_name in ['SLR-045B','SDR-204A']:
-                print 'Sensor for '+site_name+' is in second plug position'
+                #print 'Sensor for '+site_name+' is in second plug position'
                 site_sensor_position+=1
             water_level_data = filter(lambda x: x[0]['description']=='Water Level', row[3:])[site_sensor_position] 
             meas_df = pd.DataFrame(water_level_data)
@@ -138,6 +138,7 @@ for site_name in site_list['Site'][4:5]:
     WL = WL_existing.append(results_df)
     ## Plot
     fig,ax=plt.subplots(1,1,figsize=(12,6))
+    ax.set_title(site_name,fontsize=14,fontweight='bold')
     ax.plot_date(pd.to_datetime(results_df.index),results_df['in Water Level'],marker='None',ls='-',c='blue')
     ax.plot_date(pd.to_datetime(WL_existing.index),WL_existing['in Water Level'],marker='None',ls='-',c='grey')
     ax.legend()
