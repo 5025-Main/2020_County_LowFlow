@@ -1,33 +1,30 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jun 11 13:27:30 2020
-
 @author: alex.messina
 """
-
 import pandas as pd
 import datetime as dt
 import numpy as np
 from pytz import timezone
 import json
 import urllib2
-
+from matplotlib import pyplot as plt
+from matplotlib.dates import DateFormatter
+maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'#+'test/'
 # Format for UTC
 mytz = timezone('US/Pacific')
 start_time_loc = dt.datetime(2020,5,1,0,0)
 start_time_loc = mytz.normalize(mytz.localize(start_time_loc,is_dst=True))
-
 ## Get Master Site List
 site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/MasterSiteList.csv')
-
 ## Just one site
-site_list =  site_list[site_list['Site'] == 'SWT-019'] ###########
+#site_list =  site_list[site_list['Site'] == 'SWT-019'] ###########
 
 ## Loop through all sites
-for site_name in site_list['Site']:
+for site_name in site_list['Site'][4:5]:
     print
     print site_name
-    
     try:
         ## Get existing data on GitHub to get last data point
         print 'Get existing data from '+'https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Water_Level_data/'+site_name+'_raw_data_ZentraAPI.csv'
@@ -41,11 +38,9 @@ for site_name in site_list['Site']:
         ## if no existing data set, just get data from May 1
         WL_existing = pd.DataFrame()
         last_data_time_loc = start_time_loc - dt.timedelta(minutes=5)
-        
     ## Start downloading 5min after last data point 
     last_data_time_loc = last_data_time_loc + dt.timedelta(minutes=5)
     print 'Last data point in existing data at LOCAL: '+last_data_time_loc.strftime("%m/%d/%Y %H:%M")
-    
     ## Call Zentra API to get data from last start time to current
     print 'Downloading data from Zentra API for site: ' + site_name
     print ' starting at '+last_data_time_loc.strftime("%m/%d/%Y %H:%M")
@@ -59,15 +54,11 @@ for site_name in site_list['Site']:
     device_serial_number = device_df.ix[site_name]['Serial Number']
     device_password = device_df.ix[site_name]['Password']
     ## API token parameters
-    ip = "zentracloud.com"
-    key_name= 'AlexMessina'
-    token =  '1a45a3456373971b5d1120ab9a9953e731f13402'
-    
+    ip,key_name,token= "zentracloud.com",'AlexMessina','1a45a3456373971b5d1120ab9a9953e731f13402'
     ## Format start time
     mytz = timezone('US/Pacific')
     start_time_utc = last_data_time_loc.astimezone(timezone('UTC'))
     start_time  = int((start_time_utc-dt.datetime(1970,1,1,0,0,tzinfo=timezone('UTC'))).total_seconds())
-    
     ## Construct url for API call
     print 'Downloading data from Zentra API.....please wait....'
     url = 'https://' + ip + '/api/v1/readings'+ '?' + "sn=" + device_serial_number+ '&' + "start_time=" + '%s'%start_time
@@ -75,30 +66,23 @@ for site_name in site_list['Site']:
     request = urllib2.Request(url)
     request.add_header('Authorization','token %s' % token)
     request.add_header('Content-Type','application/json')
-    
     ## Get response data
     response = urllib2.urlopen(request)
     readings_str = response.read()
     readings_json = json.loads(readings_str)
-    
     # Readings are now contained in the 'readings_json' Python dictionary
     ## Data is read from JSON object using the zentra_json_parser defined above
-    with open(maindir+'logger.json', 'w') as outfile:
-        json.dump(readings_json, outfile)
-    
+#    with open(maindir+'logger.json', 'w') as outfile:
+#        json.dump(readings_json, outfile)
     print 'Formatting data....please wait...'    
     json_obj = readings_json ## save original json obj
-    
     ## Start with blank dataframe for results
     results_df = pd.DataFrame()
-    
     ## Test first row to get the Port Number
     sensors = pd.DataFrame(json_obj['device']['timeseries'][0]['configuration']['sensors'])
     number_of_sensors = len(sensors[sensors['port'].isin([7,8])==False])
-    
     for row in json_obj['device']['timeseries'][0]['configuration']['values']:
-        print
-        print row
+        #print row
         ## Row values are:
         ## 0 timestamp in UTC
         ## 1 mrid?
@@ -106,13 +90,11 @@ for site_name in site_list['Site']:
         ## 3 - 5 ports (I think these change as ports are added)
         ## 6 battery percent, battery voltage
         ## 7 reference pressure, logger temperature
-    
         ## Change UTC to local time
         utc_time = dt.datetime.utcfromtimestamp(row[0]).replace(tzinfo=timezone('UTC'))
         loc_time = utc_time.astimezone(timezone('US/Pacific')).replace(tzinfo=None)
         loc_time = pd.to_datetime(loc_time)
-        print 'Local time of reading: '+loc_time.strftime("%m/%d/%Y %H:%M")
-        
+        #print 'Local time of reading: '+loc_time.strftime("%m/%d/%Y %H:%M")
         ## Extract measurement data using the defined port number (+1)
         try:
             site_sensor_position = 0
@@ -126,12 +108,9 @@ for site_name in site_list['Site']:
             ## Transpose rows to column headers
             meas_df = meas_df.T
             meas_dict = dict(meas_df.ix['value'])
-        
         except:
             print 'No Water Level data in description'
             meas_dict = {u' Sensor Metadata': np.nan, u'in Water Level':  np.nan, u'mS/cm EC':  np.nan, u'\xb0F Water Temperature':  np.nan}
-        
-        
         ## Extract battery level data
         battery_data = filter(lambda x: x[0]['description']=='Battery Percent',row[3:])[0]
         batt_df = pd.DataFrame(battery_data)
@@ -144,31 +123,28 @@ for site_name in site_list['Site']:
         baro_df.index =   baro_df['units'].str.strip(' ')+' '+baro_df['description']
         baro_df = baro_df.T
         baro_dict = dict(baro_df.ix['value'])
-        
+        ##
         all_meas_list = []
         for d in [meas_dict,batt_dict,baro_dict]:
             for j in d.iteritems():
                 all_meas_list.append(j)
-
         ## append to results table
         results_df = results_df.append(pd.DataFrame(dict(all_meas_list), index=[loc_time.strftime("%m/%d/%Y %H:%M")]))
-    
-    results_df['in Water Level'].plot(title='Water Level (in)')
+    #results_df['in Water Level'].plot(title='Water Level (in)')
     print 'Data download complete!'
     print
     print results_df[['in Water Level',u'\xb0F Water Temperature',u'mS/cm EC',u' Sensor Metadata',u'% Battery Percent','mV Battery Voltage','kPa Reference Pressure',u'\xb0F Logger Temperature']]
-    
     ## update with new data
     WL = WL_existing.append(results_df)
+    ## Plot
+    fig,ax=plt.subplots(1,1,figsize=(12,6))
+    ax.plot_date(pd.to_datetime(results_df.index),results_df['in Water Level'],marker='None',ls='-',c='blue')
+    ax.plot_date(pd.to_datetime(WL_existing.index),WL_existing['in Water Level'],marker='None',ls='-',c='grey')
+    ax.legend()
+    ax.xaxis.set_major_formatter(DateFormatter('%m/%d/%Y'))# %H:%M'))
     ## Save raw data to csv
-    maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/test/'
-    
-    WL[['in Water Level',u'°F Water Temperature',u'mS/cm EC',u' Sensor Metadata',u'% Battery Percent','mV Battery Voltage','kPa Reference Pressure',u'\xb0F Logger Temperature']].to_csv(maindir+site_name+'_raw_data_ZentraAPI.csv',encoding='utf-8')
-    
-    
-    
-    
-    
+    WL[['in Water Level',u'°F Water Temperature',u'mS/cm EC',u' Sensor Metadata',u'% Battery Percent','mV Battery Voltage','kPa Reference Pressure',u'\xb0F Logger Temperature']].to_csv(maindir+'/Water_Level_data/'+site_name+'_raw_data_ZentraAPI.csv',encoding='utf-8')
+#%%  
     
     
     
