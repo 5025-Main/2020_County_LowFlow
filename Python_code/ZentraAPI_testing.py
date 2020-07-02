@@ -19,10 +19,12 @@ start_time_loc = mytz.normalize(mytz.localize(start_time_loc,is_dst=True))
 ## Get Master Site List
 site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/MasterSiteList.csv')
 ## Just one site
-site_list =  site_list[site_list['Site'] == 'SLR-095'] ###########
+#site_list =  site_list[site_list['Site'] == 'SLR-095'] ###########
+
+site_list = site_list[~site_list['Site'].isin(['SLR-095','SDG-084','SDR-098','SDG-085M'])]
 
 ## Loop through all sites
-for site_name in site_list['Site']:
+for site_name in site_list.ix[17:]['Site']:
     print
     print site_name
     try:
@@ -137,13 +139,13 @@ for site_name in site_list['Site']:
     ## update with new data
     WL = WL_existing.append(results_df)
     ## Plot
-    fig,ax=plt.subplots(1,1,figsize=(12,6))
-    ax.set_title(site_name,fontsize=14,fontweight='bold')
-    ax.plot_date(pd.to_datetime(results_df.index),results_df['in Water Level'],marker='None',ls='-',c='blue')
-    if len(WL_existing)>0:
-        ax.plot_date(pd.to_datetime(WL_existing.index),WL_existing['in Water Level'],marker='None',ls='-',c='grey')
-    ax.legend()
-    ax.xaxis.set_major_formatter(DateFormatter('%m/%d/%Y'))# %H:%M'))
+#    fig,ax=plt.subplots(1,1,figsize=(12,6))
+#    ax.set_title(site_name,fontsize=14,fontweight='bold')
+#    ax.plot_date(pd.to_datetime(results_df.index),results_df['in Water Level'],marker='None',ls='-',c='blue')
+#    if len(WL_existing)>0:
+#        ax.plot_date(pd.to_datetime(WL_existing.index),WL_existing['in Water Level'],marker='None',ls='-',c='grey')
+#    ax.legend()
+#    ax.xaxis.set_major_formatter(DateFormatter('%m/%d/%Y'))# %H:%M'))
     ## Save raw data to csv
     WL[['in Water Level',u'°F Water Temperature',u'mS/cm EC',u' Sensor Metadata',u'% Battery Percent','mV Battery Voltage','kPa Reference Pressure',u'\xb0F Logger Temperature']].to_csv(maindir+'/Water_Level_data/'+site_name+'_raw_data_ZentraAPI.csv',encoding='utf-8')
 #%%  

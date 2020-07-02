@@ -183,7 +183,7 @@
 181,2020-05-15 10:48:30,SDR-064D,2020-05-14 09:23:00,Flowing,light flow,,0.8,60.0,890
 182,2020-05-15 10:52:27,SDR-064C,2020-05-14 09:45:00,Ponded,leaking through concrete,https://drive.google.com/open?id=1chGHuerm8cFNaQguaYJWu2fZSGSvKrsl,-6.8,60.0,0
 183,2020-05-15 10:53:57,SDR-098,2020-05-14 10:10:00,Ponded,no flow,,0.0,60.0,0
-184,2020-05-15 10:56:01,SDR-041,2020-05-14 10:17:00,Flowing,flowing,https://drive.google.com/open?id=1PnlUVd86To0qcE-3FBlxV-DoGAb-LNhZ,3.7,20.7,9000
+184,2020-05-15 10:56:01,SDR-041,2020-05-14 10:20:00,Flowing,flowing,https://drive.google.com/open?id=1PnlUVd86To0qcE-3FBlxV-DoGAb-LNhZ,3.7,20.7,9000
 185,2020-05-15 10:58:23,SDR-130,2020-05-14 10:33:00,Ponded,"looks like no flow in some time, check data for peaks to establish if there is a leak",https://drive.google.com/open?id=1EDqpsATI82qIbUTDZexvmQuVPzs2Hfpg,-11.0,60.0,0
 186,2020-05-15 11:00:21,SDR-036,2020-05-14 10:42:00,Flowing,flowing no issues,https://drive.google.com/open?id=1QINLhz3i7xB73KObrRzPzMaGOSntAXaH,2.7,13.14,3000
 187,2020-05-15 11:01:47,SDR-204A,2020-05-14 11:00:00,Flowing,lite flow,,2.0,60.0,8800
@@ -219,19 +219,19 @@
 217,2020-05-19 16:22:35,SDG-084,2020-05-19 16:20:00,Flowing,None,,,1.94,1550
 218,2020-05-22 08:05:17,SDR-203A,2020-05-20 00:02:00,Breakaway popped open,"graffiti artist broke open weir, photo after repair",https://drive.google.com/open?id=13jgcN47vvOoxm2wakCpi55eqJpDlbPhu,0.0,60.0,0
 219,2020-05-22 07:26:58,SDR-064,2020-05-20 09:28:00,Dry,no level,https://drive.google.com/open?id=1jkPrvJDcAetDPthSu4LeP-HmT26VkSOn,,60.0,0
-220,2020-05-22 07:30:07,SDR-064A,2020-05-20 09:28:00,Flowing,light flow,https://drive.google.com/open?id=1er-fxRiZhJihkXMev8g9mAKGiqpLYB83,0.4,60.0,190
-221,2020-05-22 07:33:02,SDR-064B,2020-05-20 09:37:00,Ponded,no flow,https://drive.google.com/open?id=1j8i8RPm_1UfDpkfwPLOasNptNUT0AtnQ,0.0,60.0,0
+220,2020-05-22 07:30:07,SDR-064A,2020-05-20 09:30:00,Flowing,light flow,https://drive.google.com/open?id=1er-fxRiZhJihkXMev8g9mAKGiqpLYB83,0.4,60.0,190
+221,2020-05-22 07:33:02,SDR-064B,2020-05-20 09:40:00,Ponded,no flow,https://drive.google.com/open?id=1j8i8RPm_1UfDpkfwPLOasNptNUT0AtnQ,0.0,60.0,0
 222,2020-05-22 07:35:48,SDR-064D,2020-05-20 09:39:00,Ponded,no flow,https://drive.google.com/open?id=1Y8soriwoBRXQkv5IM6wY1S1gCb-GtsAs,0.0,60.0,0
-223,2020-05-22 07:37:53,SDR-064C,2020-05-20 09:43:00,Ponded,no flow below V,https://drive.google.com/open?id=1UXKOTJuYyC4jqMAPRNdXjtADINIRP7jq,-6.7,60.0,0
-224,2020-05-22 07:40:01,SDR-098,2020-05-20 10:03:00,Ponded,no flow,https://drive.google.com/open?id=1MI6ToGQqc4mzvUDav1N6DKzpFPiuZUdh,0.0,60.0,0
+223,2020-05-22 07:37:53,SDR-064C,2020-05-20 09:45:00,Ponded,no flow below V,https://drive.google.com/open?id=1UXKOTJuYyC4jqMAPRNdXjtADINIRP7jq,-6.7,60.0,0
+224,2020-05-22 07:40:01,SDR-098,2020-05-20 10:05:00,Ponded,no flow,https://drive.google.com/open?id=1MI6ToGQqc4mzvUDav1N6DKzpFPiuZUdh,0.0,60.0,0
 225,2020-05-22 07:47:13,SDR-130,2020-05-20 10:33:00,"ponded, possible leak in pipe. recomend clearing debri in pipe to alow pipe to empty. then make a shorter weir.",leaks in pipe,"https://drive.google.com/open?id=1DPcKCeRlzthuSABtQULRvtQgRHc_UsfR, https://drive.google.com/open?id=1057d1_SQCShyP4BCvIQ1KdSFdXIxWIDK, https://drive.google.com/open?id=1qEolmWPjUNNYYYarR3p-s1F5CCgxYLB9",-14.5,60.0,0
-226,2020-05-22 07:42:01,SDR-041,2020-05-20 10:41:00,Flowing,flowing,https://drive.google.com/open?id=1BOS4i_DJNoi6Qr5Pihvg6dpwvwoYd6Gs,3.4,22.6,9000
+226,2020-05-22 07:42:01,SDR-041,2020-05-20 10:45:00,Flowing,flowing,https://drive.google.com/open?id=1BOS4i_DJNoi6Qr5Pihvg6dpwvwoYd6Gs,3.4,22.6,9000
 227,2020-05-22 07:57:04,SDR-127B,2020-05-20 11:04:00,Flowing,flowing,https://drive.google.com/open?id=1fUfh4F0myyXLUQNvnOVXIL5fXRIpYPHK,1.4,60.0,1150
-228,2020-05-22 07:53:43,SDR-127,2020-05-20 11:23:00,Flowing,clean leaves from V,https://drive.google.com/open?id=1R59grKTjypH_awMPvy8Cxa1_Mc12yDFU,1.9,29.82,1700
+228,2020-05-22 07:53:43,SDR-127,2020-05-20 11:25:00,Flowing,clean leaves from V,https://drive.google.com/open?id=1R59grKTjypH_awMPvy8Cxa1_Mc12yDFU,1.9,29.82,1700
 229,2020-05-22 07:59:02,SDR-036,2020-05-20 11:42:00,Flowing,flowing,https://drive.google.com/open?id=1espe_VlJhz_lal0BxTgYQ2OlfWLQRPKj,3.0,16.0,3050
-230,2020-05-22 08:01:58,SDR-204A,2020-05-20 12:02:00,Flowing,flowing,https://drive.google.com/open?id=165LN9y-i2RtIykB9PHQNhAq3dfqUDM5n,2.5,29.81,3900
+230,2020-05-22 08:01:58,SDR-204A,2020-05-20 12:05:00,Flowing,flowing,https://drive.google.com/open?id=165LN9y-i2RtIykB9PHQNhAq3dfqUDM5n,2.5,29.81,3900
 231,2020-05-22 08:08:27,SDR-064,2020-05-21 08:50:00,Ponded,level go down after flow due to seeping in to sand,"https://drive.google.com/open?id=1gWDLrD4JFAQ3k5DCghxEpJLMMpE1lHH8, https://drive.google.com/open?id=109_TjJQNt_4drX6JrV3NhlUcGPNwuffD",-1.5,60.0,0
-232,2020-05-22 08:11:18,SDR-064B,2020-05-21 08:53:00,Flowing,light flow,,0.3,60.0,100
+232,2020-05-22 08:11:18,SDR-064B,2020-05-21 08:55:00,Flowing,light flow,,0.3,60.0,100
 233,2020-05-22 08:16:20,SDR-203A,2020-05-21 09:20:00,Flowing,light flow,https://drive.google.com/open?id=1Kkq7RSabtkYkfKT14UfKuEmgHbZ2A4t5,0.1,60.0,15
 234,2020-05-22 08:18:10,SDR-036,2020-05-21 09:38:00,Flowing,flowing,,2.7,15.87,2700
 235,2020-05-22 08:25:29,SWT-235,2020-05-21 10:20:00,Flowing,flowing,https://drive.google.com/open?id=1A2_mAI37F8xjPeIt70bl0X5OHNiRJmU2,3.5,8.7,3400
@@ -283,17 +283,17 @@
 281,2020-05-27 07:02:14,SDR-203A,2020-05-26 10:05:00,Flowing,light flow,https://drive.google.com/open?id=1TmJKCfcXI9-mGD3aR3WGFPxgpQkaGbka,0.3,60.0,30
 282,2020-05-27 07:04:41,SDR-036,2020-05-26 10:24:00,Flowing,flowing ,https://drive.google.com/open?id=1AFYWBhNJDdMWbQTRmuFWhnKpxYW9b1by,2.5,26.5,3900
 283,2020-05-27 07:07:15,SDR-127B,2020-05-26 10:48:00,Flowing,flowing,https://drive.google.com/open?id=1Q691KcfQunX1E6hrx7o9AatQot1JyDZG,1.7,30.0,1900
-284,2020-05-27 07:10:02,SDR-127,2020-05-26 11:03:00,Flowing,"flowing, no blockage ",,1.2,60.0,1450
+284,2020-05-27 07:10:02,SDR-127,2020-05-26 11:05:00,Flowing,"flowing, no blockage ",,1.2,60.0,1450
 285,2020-05-27 07:15:16,SDR-130,2020-05-26 12:00:00,"weir not staying at V. lower V, remove water behind v, seal pipe seams and weir","seal weir, seams of pipe and lower V",,-15.0,60.0,0
-286,2020-05-27 07:19:00,SDR-098,2020-05-26 12:19:00,Ponded,"no flow, ponded @ zero. dead skunk in channel",,0.0,60.0,0
-287,2020-05-27 07:21:30,SDR-041,2020-05-26 12:31:00,Flowing,flowing,https://drive.google.com/open?id=18RDPdckjawTtY5Vjx2aU0SE5F4rcECYt,3.5,25.1,8900
-288,2020-05-27 07:24:17,SDR-064A,2020-05-26 12:51:00,Ponded,ponded,https://drive.google.com/open?id=1KBWdi5dN7etjCJYH0LQdIruU3t_68ruQ,0.0,60.0,0
+286,2020-05-27 07:19:00,SDR-098,2020-05-26 12:20:00,Ponded,"no flow, ponded @ zero. dead skunk in channel",,0.0,60.0,0
+287,2020-05-27 07:21:30,SDR-041,2020-05-26 12:35:00,Flowing,flowing,https://drive.google.com/open?id=18RDPdckjawTtY5Vjx2aU0SE5F4rcECYt,3.5,25.1,8900
+288,2020-05-27 07:24:17,SDR-064A,2020-05-26 12:55:00,Ponded,ponded,https://drive.google.com/open?id=1KBWdi5dN7etjCJYH0LQdIruU3t_68ruQ,0.0,60.0,0
 289,2020-05-27 07:26:25,SDR-064B,2020-05-26 12:55:00,Ponded,zero,https://drive.google.com/open?id=1yNhxwUzwtiImyLkdorPCRkDmEtzZ3xgU,0.0,60.0,0
-290,2020-05-27 07:29:42,SDR-064D,2020-05-26 12:57:00,Flowing,"flowing, possible discharge",https://drive.google.com/open?id=1D4Yih1DnZw881cb7W9uT640RfsLYRr22,2.0,16.3,1720
-291,2020-05-27 07:33:01,SDR-064C,2020-05-26 13:04:00,Leaking,cement leaks,https://drive.google.com/open?id=1h_Vcx0DEogxSdaZCIoApZEhqyd5NAdRX,-8.0,60.0,0
+290,2020-05-27 07:29:42,SDR-064D,2020-05-26 13:00:00,Flowing,"flowing, possible discharge",https://drive.google.com/open?id=1D4Yih1DnZw881cb7W9uT640RfsLYRr22,2.0,16.3,1720
+291,2020-05-27 07:33:01,SDR-064C,2020-05-26 13:05:00,Leaking,cement leaks,https://drive.google.com/open?id=1h_Vcx0DEogxSdaZCIoApZEhqyd5NAdRX,-8.0,60.0,0
 292,2020-05-27 13:49:38,CAR-070E,2020-05-27 13:55:00,Flowing,None,https://drive.google.com/open?id=1Z9YOYyzrwsnRyIsmcG_yGgCMGG48v8xk,2.0,5.47,450
 293,2020-05-28 09:28:01,SLR-095,2020-05-27 09:25:00,Flowing,None,https://drive.google.com/open?id=1kYqdUm8gp-mCeiS5eondl-zHZc-07KqB,3.8,7.0,2900
-294,2020-05-27 16:22:33,SDR-130,2020-05-27 09:36:00,"repaired day befor, didnt fill over night",repaired leak didn't fill over night,"https://drive.google.com/open?id=1xwgDwPz0te3Z4N1OVJBjPEhbN1L3HD-4, https://drive.google.com/open?id=1WNyUlQCLnkkHDIEe0ShKURDO3jMEbyXM",-21.5,60.0,0
+294,2020-05-27 16:22:33,SDR-130,2020-05-27 09:40:00,"repaired day befor, didnt fill over night",repaired leak didn't fill over night,"https://drive.google.com/open?id=1xwgDwPz0te3Z4N1OVJBjPEhbN1L3HD-4, https://drive.google.com/open?id=1WNyUlQCLnkkHDIEe0ShKURDO3jMEbyXM",-21.5,60.0,0
 295,2020-05-27 16:25:03,SWT-235,2020-05-27 10:05:00,Flowing,flowing,https://drive.google.com/open?id=1LXQAFK1O956Txf1MOM-PC91t8N4oRjwu,4.9,6.73,4000
 296,2020-05-27 10:30:01,CAR-072Q,2020-05-27 10:25:00,Flowing,Most flow coming from curb inlet at time of measurement,"https://drive.google.com/open?id=1kZXStCCHN072mDKY5dDouVrO-zEURgTQ, https://drive.google.com/open?id=1GWaD4mP-X2S3WZGOOsJNLq4fUEqBTE4k, https://drive.google.com/open?id=190vwSzg5DHAHQfr-5VHFmKSh84jFZiX3",2.5,20.37,1360
 297,2020-05-27 16:27:25,SWT-162,2020-05-27 10:25:00,Flowing,flowing,https://drive.google.com/open?id=1ltCl2vsE1y9WH6S00K_AfK1UZAogiehL,2.5,30.0,2000
@@ -330,8 +330,8 @@
 328,2020-05-27 15:14:00,SLR-045,2020-05-27 15:15:00,Flowing,None,,1.4,30.0,1490
 329,2020-05-28 09:22:57,SLR-045,2020-05-27 15:15:00,Flowing,None,,1.4,30.0,1490
 330,2020-05-28 14:37:31,SDG-072A,2020-05-28 02:35:00,Flowing,None,,0.7,60.0,330
-331,2020-05-28 15:12:31,SDG-085M,2020-05-28 03:10:00,Flowing,None ,,2.7,13.4,2670
-332,2020-05-28 15:15:00,SDG-085M,2020-05-28 03:15:00,Flowing,None,,2.7,13.25,2750
+331,2020-05-28 15:12:31,SDG-085M,2020-05-28 15:10:00,Flowing,None ,,2.7,13.4,2670
+332,2020-05-28 15:15:00,SDG-085M,2020-05-28 15:15:00,Flowing,None,,2.7,13.25,2750
 333,2020-05-28 15:37:43,SDG-084J,2020-05-28 03:35:00,Flowing,None ,,0.7,60.0,290
 334,2020-05-28 15:39:36,SDG-084J,2020-05-28 03:40:00,Flowing,None ,,0.7,60.0,270
 335,2020-05-28 09:40:03,SLR-095,2020-05-28 09:40:00,Flowing,None,,3.7,7.0,2950
@@ -421,20 +421,20 @@
 419,2020-06-12 12:04:38,CAR-072C,2020-06-10 15:05:00,Flowing,N/A,,2.1,38.0,3230
 420,2020-06-12 12:05:36,CAR-072C,2020-06-10 15:09:00,Flowing,N/A,,2.0,30.0,2650
 421,2020-06-12 12:07:10,CAR-072C,2020-06-10 15:12:00,Flowing,Cleared sediment around probe,https://drive.google.com/open?id=1zMEaicbSRfg_4xgh7bhFxrq_dFRXHiTv,2.0,30.0,2650
-422,2020-06-12 18:29:17,SDR-064A,2020-06-01 08:51:00,Flowing,flowing,https://drive.google.com/open?id=11NyEPHG068Zf61NAnGxkanl58mVrxxR6,0.4,60.0,70
-423,2020-06-12 18:32:59,SDR-064B,2020-06-11 08:59:00,Ponded,level with V,https://drive.google.com/open?id=1EoCnnkgtnWtbZwmpEUe8sQTsn9HJlaer,0.0,60.0,0
-424,2020-06-12 18:39:54,SDR-064D,2020-06-11 09:01:00,Flowing,"flowing, set new probe next to p/3 - p/4",https://drive.google.com/open?id=1LFvb50hQAiw4E1ztsV0AjIXcBr313PEH,1.0,30.0,500
-425,2020-06-12 18:43:12,SDR-064C,2020-06-11 09:02:00,Ponded,-5 level due to leaks in pavement ,https://drive.google.com/open?id=1phdoDt3o-l_FyvMOERcjhqQuLCXgtbfq,-6.5,60.0,0
-426,2020-06-12 18:46:25,SDR-098,2020-06-11 10:33:00,Ponded,"zero, no flow.","https://drive.google.com/open?id=1mC6H6na7ejPjCIgtxthXECru4jK1yRpn, https://drive.google.com/open?id=16YdOKYhcNTRtpkA9qswsQXsYYy9a9iwq",0.0,60.0,0
-427,2020-06-12 18:49:19,SDR-041,2020-06-11 10:44:00,Flowing,flowing,https://drive.google.com/open?id=1aHoWwWCLDm2xS-Lul-oBum61fEOPnC8U,3.5,21.0,7000
-428,2020-06-12 18:51:49,SDR-041,2020-06-11 10:44:00,Flowing,flowing,https://drive.google.com/open?id=16YB0ShdhgOWq8OaAJ90VvIn3V_8rmeWz,3.5,21.31,7000
-429,2020-06-12 18:55:48,SDR-130,2020-06-11 11:02:00,Ponded,- due to leaks in concrete seams.,https://drive.google.com/open?id=1AiCMJY_z8KNHRqTl8gA3QMf480N3VwzF,-2.5,60.0,0
+422,2020-06-12 18:29:17,SDR-064A,2020-06-01 08:55:00,Flowing,flowing,https://drive.google.com/open?id=11NyEPHG068Zf61NAnGxkanl58mVrxxR6,0.4,60.0,70
+423,2020-06-12 18:32:59,SDR-064B,2020-06-11 09:00:00,Ponded,level with V,https://drive.google.com/open?id=1EoCnnkgtnWtbZwmpEUe8sQTsn9HJlaer,0.0,60.0,0
+424,2020-06-12 18:39:54,SDR-064D,2020-06-11 09:05:00,Flowing,"flowing, set new probe next to p/3 - p/4",https://drive.google.com/open?id=1LFvb50hQAiw4E1ztsV0AjIXcBr313PEH,1.0,30.0,500
+425,2020-06-12 18:43:12,SDR-064C,2020-06-11 09:05:00,Ponded,-5 level due to leaks in pavement ,https://drive.google.com/open?id=1phdoDt3o-l_FyvMOERcjhqQuLCXgtbfq,-6.5,60.0,0
+426,2020-06-12 18:46:25,SDR-098,2020-06-11 10:35:00,Ponded,"zero, no flow.","https://drive.google.com/open?id=1mC6H6na7ejPjCIgtxthXECru4jK1yRpn, https://drive.google.com/open?id=16YdOKYhcNTRtpkA9qswsQXsYYy9a9iwq",0.0,60.0,0
+427,2020-06-12 18:49:19,SDR-041,2020-06-11 10:45:00,Flowing,flowing,https://drive.google.com/open?id=1aHoWwWCLDm2xS-Lul-oBum61fEOPnC8U,3.5,21.0,7000
+428,2020-06-12 18:51:49,SDR-041,2020-06-11 10:45:00,Flowing,flowing,https://drive.google.com/open?id=16YB0ShdhgOWq8OaAJ90VvIn3V_8rmeWz,3.5,21.31,7000
+429,2020-06-12 18:55:48,SDR-130,2020-06-11 11:05:00,Ponded,- due to leaks in concrete seams.,https://drive.google.com/open?id=1AiCMJY_z8KNHRqTl8gA3QMf480N3VwzF,-2.5,60.0,0
 430,2020-06-12 18:57:57,SDR-127B,2020-06-11 11:21:00,Flowing,flowing,https://drive.google.com/open?id=1Y0gA2shV5fZaGWVQY3dVq-Ll82rCEA0E,1.3,60.0,1600
-431,2020-06-12 19:01:00,SDR-127,2020-06-11 11:34:00,Flowing,flowing,https://drive.google.com/open?id=1CEx07Ez8bbiqhneubg9KxXthdrvKa_Ha,1.5,60.0,2000
-432,2020-06-12 19:26:01,SDR-064,2020-06-12 09:32:00,Flowing,lastof flow ,https://drive.google.com/open?id=1iPqbuqLr0YZcQt3e0gmsKLBVuEIpCs4-,0.3,60.0,20
-433,2020-06-12 19:28:44,SDR-064D,2020-06-12 09:52:00,Flowing,"light flow, installing comparison probe",,0.3,60.0,0
+431,2020-06-12 19:01:00,SDR-127,2020-06-11 11:35:00,Flowing,flowing,https://drive.google.com/open?id=1CEx07Ez8bbiqhneubg9KxXthdrvKa_Ha,1.5,60.0,2000
+432,2020-06-12 19:26:01,SDR-064,2020-06-12 09:40:00,Flowing,lastof flow ,https://drive.google.com/open?id=1iPqbuqLr0YZcQt3e0gmsKLBVuEIpCs4-,0.3,60.0,20
+433,2020-06-12 19:28:44,SDR-064D,2020-06-12 09:55:00,Flowing,"light flow, installing comparison probe",,0.3,60.0,0
 434,2020-06-12 19:30:55,SDR-204A,2020-06-12 10:55:00,Flowing,"flowing, install comparison probe",https://drive.google.com/open?id=1byzwKCM67yUjnDZ-U8cUcrgGsWblpzxC,2.0,30.0,2000
-435,2020-06-12 19:33:50,SDR-203A,2020-06-12 11:32:00,Flowing,"flowing, last rain caused leak, replace  breakaway and seal",https://drive.google.com/open?id=1w2mDVDiOvbykAGTkoGDgZ4vzl64CaSpC,0.5,60.0,140
+435,2020-06-12 19:33:50,SDR-203A,2020-06-12 11:35:00,Flowing,"flowing, last rain caused leak, replace  breakaway and seal",https://drive.google.com/open?id=1w2mDVDiOvbykAGTkoGDgZ4vzl64CaSpC,0.5,60.0,140
 436,2020-06-12 19:39:29,SWT-235,2020-06-12 12:06:00,Flowing,flowing,,3.0,13.87,3900
 437,2020-06-12 19:43:32,SWT-162,2020-06-12 12:33:00,Flowing,"sediment, seems to be from pool back flush or sediment filter change",https://drive.google.com/open?id=1btmozWJk4OLPsx8_gWiMIiB-hJUlgHEI,3.1,10.15,3200
 438,2020-06-12 19:45:46,SWT-235,2020-06-12 12:06:00,Flowing,flowing,,3.0,13.87,3900
@@ -445,14 +445,14 @@
 443,2020-06-12 20:05:28,SWT-233,2020-06-12 13:56:00,Ponded,"smells like sewage, leaks in pipe seems",https://drive.google.com/open?id=1Qn9y75xIl7TVY3-c4smTKlUK0vyHkc4D,-2.0,60.0,0
 444,2020-06-12 20:09:01,SWT-019,2020-06-12 14:15:00,Ponded,"sediment from pool filter packed over sensor, clean around sensor","https://drive.google.com/open?id=1BDlQLrmGucxU3ONR_Sy8nznTCJIWhPh5, https://drive.google.com/open?id=1EgNtogwgeoAL7s4rSSvYD-93dnMfF71n, https://drive.google.com/open?id=1yc954Dxmwx6NOfPoRw9VJJvHmLQ-HOrS",0.0,60.0,0
 445,2020-06-19 09:36:26,SDG-085M,2020-06-11 10:45:00,Flowing,None,,2.8,15.75,2650
-446,2020-06-19 09:40:29,SDG-085,2020-06-19 09:35:00,Obstructed,Removed obstruction and debris behind weir then took level and flow measurement ,https://drive.google.com/open?id=1eoqIIzOCdfRHWBuoBX-boB1TPceoXvrT,5.1,5.0,5200
+446,2020-06-19 09:40:29,SDG-085,2020-06-19 09:40:00,Obstructed,Removed obstruction and debris behind weir then took level and flow measurement ,https://drive.google.com/open?id=1eoqIIzOCdfRHWBuoBX-boB1TPceoXvrT,5.1,5.0,5200
 447,2020-06-20 14:57:21,CAR-070E,2020-06-10 16:50:00,Flowing,None,,2.0,4.78,380
 448,2020-06-23 12:58:16,SDG-072,2020-06-23 12:55:00,Flowing,Cleared vegetation from v notch ,,1.5,62.0,1810
 449,2020-06-23 13:21:30,SDG-072A,2020-06-23 13:20:00,Flowing,Trickle flow. Debris cleared from v at time of measurement ,,0.8,60.0,180
 450,2020-06-23 13:50:16,CAR-070E,2020-06-10 16:50:00,Flowing,None,,2.0,4.78,380
 451,2020-06-23 13:53:38,SDG-084,2020-06-23 13:50:00,Flowing,Measurement before sediment/leafs clean out from behind weir/ on probe. No obstruction ,,4.3,5.11,1860
 452,2020-06-23 14:10:18,SDG-084,2020-06-23 14:04:00,Flowing,Debris cleared from probe upstream of v. Measurement taken after. ,,3.8,17.88,6950
-453,2020-06-23 14:59:31,SDG-085,2020-06-19 09:35:00,Obstructed,Removed obstruction and debris behind weir then took level and flow measurement ,https://drive.google.com/open?id=1Pgy2c-crrQT2WuE1R9M0_S6FhfzHMHU8,5.1,5.0,5200
+453,2020-06-23 14:59:31,SDG-085,2020-06-19 09:40:00,Obstructed,Removed obstruction and debris behind weir then took level and flow measurement ,https://drive.google.com/open?id=1Pgy2c-crrQT2WuE1R9M0_S6FhfzHMHU8,5.1,5.0,5200
 454,2020-06-23 15:00:32,SDG-085G,2020-06-23 15:00:00,Ponded,None,,0.0,60.0,0
 455,2020-06-23 15:24:31,SDG-085M,2020-06-23 15:10:00,Flowing,None,,2.6,12.47,1880
 456,2020-06-23 15:35:08,SDG-084J,2020-06-23 15:34:00,Leaking,Measurement taken when leaking. Repaired. No flow upstream. ,,-2.0,60.0,0
@@ -481,17 +481,17 @@
 479,2020-06-25 11:34:20,CAR-072O,2020-06-25 11:35:00,Ponded,Not enough flow to measure ,https://drive.google.com/open?id=1_dzJP5ZbagZgbS0N2mjuDpaeguEEldw_,0.2,60.0,0
 480,2020-06-25 11:50:24,CAR-070,2020-06-25 11:50:00,Flowing,None,https://drive.google.com/open?id=1X1Qz3riX0s3DYJJjEZEJvlb2OVxnE-VT,2.4,30.0,3060
 481,2020-06-25 12:08:45,CAR-070E,2020-06-25 12:15:00,Flowing,Debris in weir was cleaned before measuring. ,https://drive.google.com/open?id=1nMt9RNfQbRQ7jPBzh_bxW761BmDjyGSb,2.0,8.0,600
-482,2020-06-26 09:23:37,SDR-064,2020-06-23 09:30:00,Dry,"camera taking photos 12 hrs, pull sd card and set timelaps",,0.0,60.0,0
-483,2020-06-26 09:30:49,SDR-064A,2020-06-23 09:48:00,Flowing,flowing,https://drive.google.com/open?id=1i8XcmLbgQucla7qLnjanqeV-OHf3DaKU,0.5,60.0,100
-484,2020-06-26 09:35:05,SDR-064B,2020-06-23 09:57:00,Flowing,flowing,https://drive.google.com/open?id=1krONeVN1w5utpz5xarTK7XFXRc-ular6,1.0,30.0,200
-485,2020-06-26 09:51:30,SDR-064D,2020-06-23 10:02:00,Ponded,no flow zero,https://drive.google.com/open?id=1d73NZpYTxUj-42r868ofZq6i4fGl6UR7,0.0,60.0,0
+482,2020-06-26 09:23:37,SDR-064,2020-06-23 09:30:00,Dry,"camera taking photos 12 hrs, pull sd card and set timelaps",,,60.0,0
+483,2020-06-26 09:30:49,SDR-064A,2020-06-23 09:50:00,Flowing,flowing,https://drive.google.com/open?id=1i8XcmLbgQucla7qLnjanqeV-OHf3DaKU,0.5,60.0,100
+484,2020-06-26 09:35:05,SDR-064B,2020-06-23 10:00:00,Flowing,flowing,https://drive.google.com/open?id=1krONeVN1w5utpz5xarTK7XFXRc-ular6,1.0,30.0,200
+485,2020-06-26 09:51:30,SDR-064D,2020-06-23 10:05:00,Ponded,no flow zero,https://drive.google.com/open?id=1d73NZpYTxUj-42r868ofZq6i4fGl6UR7,0.0,60.0,0
 486,2020-06-26 09:53:50,SDR-064C,2020-06-23 10:05:00,Ponded,-7cm,,-7.0,60.0,0
-487,2020-06-26 12:28:29,SDR-041,2020-06-23 11:13:00,Flowing,flowing,https://drive.google.com/open?id=1m9DHrYyAyV0OSgHWYbWU8lNH7W3ZRe7Q,3.0,25.29,7100
+487,2020-06-26 12:28:29,SDR-041,2020-06-23 11:15:00,Flowing,flowing,https://drive.google.com/open?id=1m9DHrYyAyV0OSgHWYbWU8lNH7W3ZRe7Q,3.0,25.29,7100
 488,2020-06-26 12:30:37,SDR-130,2020-06-23 11:35:00,Ponded,ponded - 2.5cm,,-2.5,60.0,0
 489,2020-06-26 12:33:50,SDR-127,2020-06-24 11:50:00,Flowing,"flowing, removed a few leaves",https://drive.google.com/open?id=19oIsbO9fwXuNwPEFgBnNKoxayUwV3Rjb,0.6,60.0,370
-490,2020-06-26 12:37:21,SDR-064,2020-06-24 09:25:00,Dry,"no flow, dry. reprogram camera to comunicate",,0.0,60.0,0
+490,2020-06-26 12:37:21,SDR-064,2020-06-24 09:25:00,Dry,"no flow, dry. reprogram camera to comunicate",,,60.0,0
 491,2020-06-26 12:38:51,SDR-036,2020-06-24 10:47:00,Flowing,flowing,,1.8,30.0,2300
-492,2020-06-26 12:42:38,SDR-204A,2020-06-24 11:09:00,Flowing,flowing,https://drive.google.com/open?id=1taXz4bCsm9J3PbsbNj5TbYOCZyhymAMy,1.5,30.0,1700
+492,2020-06-26 12:42:38,SDR-204A,2020-06-24 11:10:00,Flowing,flowing,https://drive.google.com/open?id=1taXz4bCsm9J3PbsbNj5TbYOCZyhymAMy,1.5,30.0,1700
 493,2020-06-26 12:44:59,SDR-203A,2020-06-24 11:15:00,Ponded,ponded zero,https://drive.google.com/open?id=1asp8_1AA0RRkSjzWqxJn47DA6sdiVKlg,0.0,60.0,0
 494,2020-06-26 12:48:58,SWT-235,2020-06-24 11:54:00,Flowing,flowing,https://drive.google.com/open?id=1xY-aHQAIpVYj5HxBfbSbZ2CtoA4fHMp_,3.0,15.0,4000
 495,2020-06-26 12:52:20,SWT-162,2020-06-24 12:12:00,Flowing,"flowing, camera not communicating, replace extension cable",https://drive.google.com/open?id=156gUd6kZ27i7obVwsaSW1zyfwckByOGO,1.8,30.0,3500
@@ -515,3 +515,16 @@
 513,2020-07-01 15:24:20,SDG-084,2020-07-01 15:21:00,Flowing,NA,,3.3,8.31,2590
 514,2020-07-01 15:50:45,SDG-085,2020-07-01 15:45:00,Flowing,None,,5.3,7.64,7960
 515,2020-07-01 16:25:27,CAR-059,2020-07-01 16:24:00,Flowing,Level taken on upstream portion. Flow measurement impossible ,,1.27,60.0,0
+516,2020-07-02 08:42:32,SDR-064,2020-07-02 08:25:00,Ponded,None,https://drive.google.com/open?id=1wUkqf6uhbIshpQ899AHYycEeKWUszvEP,-2.3,60.0,0
+517,2020-07-02 08:45:48,SDR-064A,2020-07-02 08:45:00,Flowing,None,https://drive.google.com/open?id=1YSvxXAzs-fI6pDD1Af36xgKkRBt4Ikil,0.8,60.0,330
+518,2020-07-02 08:49:40,SDR-064C,2020-07-02 08:50:00,Ponded,None,https://drive.google.com/open?id=1La_e84N574R6vt5qNHrviVVxmJic-rbP,-5.3,60.0,0
+519,2020-07-02 08:52:42,SDR-064B,2020-07-02 08:55:00,Ponded,None,https://drive.google.com/open?id=16CChQJV5NRTL6XxtlLZtBq5FF1M5T9CI,0.0,60.0,0
+520,2020-07-02 08:54:54,SDR-064D,2020-07-02 08:55:00,Ponded,None,https://drive.google.com/open?id=1ndzpYttvOlZtNKdhwfTmfeu283NRX_B3,0.0,60.0,0
+521,2020-07-02 09:12:14,SDR-098,2020-07-02 09:10:00,Flowing,None,https://drive.google.com/open?id=1yvPM98mEqSzinE0v60W3rfPVAtsmF-rx,0.3,60.0,10
+522,2020-07-02 09:23:31,SDR-041,2020-07-02 09:20:00,Flowing,None,https://drive.google.com/open?id=1NbQP-mRM-QrrNUXMZyLTONQXpabt7Jgy,2.9,15.0,4000
+523,2020-07-02 09:45:39,SDR-130,2020-07-02 09:45:00,Ponded,None,https://drive.google.com/open?id=1un2Ejz9ovV50DNiFmLxThQv4HWsoki3h,-0.5,60.0,0
+524,2020-07-02 10:17:25,SDR-127B,2020-07-02 10:10:00,Flowing,None,https://drive.google.com/open?id=1DOm28Lh7yN3HFzytGHAj_tcBeix-ds6z,2.0,15.0,1300
+525,2020-07-02 10:26:19,SDR-127,2020-07-02 10:25:00,Flowing,None,https://drive.google.com/open?id=1jNvDcRKnaPlqwFrVjybWOdkemktvIW1z,0.5,60.0,180
+526,2020-07-02 10:44:05,SDR-036,2020-07-02 10:45:00,Flowing,None,https://drive.google.com/open?id=1Oun05rZ699z90kiGQs2AgkrcuBo6PZiC,1.7,30.0,1560
+527,2020-07-02 11:10:56,SDR-204A,2020-07-02 11:10:00,Flowing,Leaf debris clogging weir. See photo ,https://drive.google.com/open?id=1bOjUBZy0jcBHAe6kwYc-_z_P6hCoP-n0,1.3,30.0,1130
+528,2020-07-02 11:13:00,SDR-203A,2020-07-02 11:15:00,Ponded,None,https://drive.google.com/open?id=1rfwJ_c0stqfrxYHr21N3Q1O3z2ElkSu9,0.0,60.0,0
