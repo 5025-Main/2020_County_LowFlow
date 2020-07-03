@@ -306,7 +306,7 @@
 304,2020-05-27 11:33:08,CAR-072C,2020-05-27 11:10:00,Obstructed,"Cleared debris. Got level immediately after, no volume measurement due to unsteady flow after clear. ",,5.8,,
 305,2020-05-27 16:33:07,SWT-030I,2020-05-27 11:12:00,Ponded,no flow,https://drive.google.com/open?id=1ZJ5GnyYAoyan6Pl1tQaLoXUjAYxXYz7E,0.0,60.0,0
 306,2020-05-27 11:35:11,CAR-072C,2020-05-27 11:15:00,Flowing,Cleared obstruction. Free flowing for this measurement.,https://drive.google.com/open?id=1NbGd-pTcC6JSL0oR0HnI9Ufyt2mw5o14,1.8,30.05,2280
-307,2020-05-27 16:35:03,SWT-030,2020-05-27 11:16:00,Flowing,flowing,,4.0,9.38,5000
+307,2020-05-27 16:35:03,SWT-030,2020-05-27 11:20:00,Flowing,flowing,,4.0,9.38,5000
 308,2020-05-27 11:36:02,CAR-072C,2020-05-27 11:20:00,Flowing,Cleared obstruction. Free flowing for this measurement ,,1.8,30.64,1830
 309,2020-05-27 11:36:46,CAR-072C,2020-05-27 11:20:00,Flowing,Cleared obstruction. Free flowing for this measurement,,1.8,30.01,1840
 310,2020-05-27 11:37:37,CAR-072C,2020-05-27 11:20:00,Flowing,Cleared obstruction. Free flowing for this measurement,,1.8,30.01,1840
@@ -441,7 +441,7 @@
 439,2020-06-12 19:51:41,SWT-068,2020-06-12 13:10:00,Flowing,"flowing, last rain, cased erosions, re packed earthen wall  ","https://drive.google.com/open?id=17p9-vpBOoXcMNUUeN6CpzW89M0OqGSQx, https://drive.google.com/open?id=12LdhGBJWVzeEvkpcgy42KTAjEnnFogd5, https://drive.google.com/open?id=1b-wlA1CLiTsWaKi8CCDr0hmRW8EURabu",7.0,4.68,9300
 440,2020-06-12 19:56:00,SWT-030I,2020-06-12 13:29:00,Ponded,"level , no flow",https://drive.google.com/open?id=18x2EqXRtWE9d8kO61Q3U4MMe38KPtpNu,0.0,60.0,0
 441,2020-06-12 19:59:07,SWT-068,2020-06-12 13:10:00,Flowing,"flowing, small trickle erosion sections from last rain, repair as necessary  ",https://drive.google.com/open?id=1vBRrqhoxw8HfemyGCmwF4OryOEMVDwdA,4.68,4.68,9300
-442,2020-06-12 20:01:48,SWT-030,2020-06-12 13:29:00,Flowing,flowing,https://drive.google.com/open?id=14hy4mqdtrxUocHsW-S0P7vAhhUj7CE5r,451.0,6.51,4780
+442,2020-06-12 20:01:48,SWT-030,2020-06-12 13:30:00,Flowing,flowing,https://drive.google.com/open?id=14hy4mqdtrxUocHsW-S0P7vAhhUj7CE5r,4.5,6.51,4780
 443,2020-06-12 20:05:28,SWT-233,2020-06-12 13:56:00,Ponded,"smells like sewage, leaks in pipe seems",https://drive.google.com/open?id=1Qn9y75xIl7TVY3-c4smTKlUK0vyHkc4D,-2.0,60.0,0
 444,2020-06-12 20:09:01,SWT-019,2020-06-12 14:15:00,Ponded,"sediment from pool filter packed over sensor, clean around sensor","https://drive.google.com/open?id=1BDlQLrmGucxU3ONR_Sy8nznTCJIWhPh5, https://drive.google.com/open?id=1EgNtogwgeoAL7s4rSSvYD-93dnMfF71n, https://drive.google.com/open?id=1yc954Dxmwx6NOfPoRw9VJJvHmLQ-HOrS",0.0,60.0,0
 445,2020-06-19 09:36:26,SDG-085M,2020-06-11 10:45:00,Flowing,None,,2.8,15.75,2650
@@ -497,7 +497,7 @@
 495,2020-06-26 12:52:20,SWT-162,2020-06-24 12:12:00,Flowing,"flowing, camera not communicating, replace extension cable",https://drive.google.com/open?id=156gUd6kZ27i7obVwsaSW1zyfwckByOGO,1.8,30.0,3500
 496,2020-06-26 12:55:29,SWT-068,2020-06-24 13:11:00,Flowing,flowing,https://drive.google.com/open?id=1PV4EZYhmuMT-q9G3U72VeQiGnzRezVL4,6.0,6.0,9000
 497,2020-06-26 12:58:54,SWT-030I,2020-06-24 13:28:00,Ponded,ponded zero,https://drive.google.com/open?id=1rWXLWr17d14JPSuUsvM_FAukHIfJd0o5,0.0,60.0,0
-498,2020-06-26 13:00:59,SWT-030,2020-06-24 13:28:00,Flowing,flowing,"https://drive.google.com/open?id=1bEH5HXKf2PxfTptSSJcNQwIwWOCzH0j-, https://drive.google.com/open?id=168Cen9iylx9k9yTEdYCXnj-hS7fQDCs5",4.0,8.82,5200
+498,2020-06-26 13:00:59,SWT-030,2020-06-24 13:30:00,Flowing,flowing,"https://drive.google.com/open?id=1bEH5HXKf2PxfTptSSJcNQwIwWOCzH0j-, https://drive.google.com/open?id=168Cen9iylx9k9yTEdYCXnj-hS7fQDCs5",4.0,8.82,5200
 499,2020-06-26 13:03:53,SWT-233,2020-06-24 13:54:00,Ponded,"ponded, -5 cm. camera not communicating, check programing and connection",,-5.0,60.0,0
 500,2020-06-26 13:06:38,SWT-019,2020-06-24 14:12:00,Ponded,ponded no flow zero,https://drive.google.com/open?id=1shFDrvBKQlATaHNA_BN2rZO9CeHGz8oq,0.0,60.0,0
 501,2020-07-01 09:48:20,SLR-095,2020-07-01 09:42:00,Flowing,Level meas take after debris clearing ,,3.5,10.0,2520

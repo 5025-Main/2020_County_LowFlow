@@ -13,7 +13,7 @@ from scipy import ndimage
 from PIL import Image
 import piexif
 
-site_name = 'CAR-072'
+site_name = 'SDR-203A'
 pic_start_time = dt.datetime(2020,6,1,0,0)
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
@@ -150,7 +150,11 @@ picture_file = pic_dir + pic_folder+ pics[curr_pos]
 date_taken = get_pic_date(picture_file)
 
 t = dt.datetime.strptime(date_taken, '%Y:%m:%d %H:%M:%S')
-t_round5 = dt.datetime(t.year, t.month, t.day, t.hour,5*(t.minute // 5)+5,0) ## round times up to nearest 5 min
+if 5*(t.minute // 5)+5 == 60:
+    t_round5 = dt.datetime(t.year, t.month, t.day, t.hour,0,0) ## round times up to nearest 5 min
+else:
+    t_round5 = dt.datetime(t.year, t.month, t.day, t.hour,5*(t.minute // 5)+5,0)
+    
 flow_at_image = WL.ix[t_round5,'Flow_gpm']
 level_at_image = WL.ix[t_round5,'Level_in']
 
