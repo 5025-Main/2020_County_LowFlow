@@ -24,7 +24,7 @@ site_list =  site_list[site_list['Site'] == 'SLR-095'] ###########
 #site_list = site_list[~site_list['Site'].isin(['SLR-095','SDG-084','SDR-098','SDG-085M'])]
 
 ## Loop through all sites
-for site_name in site_list.ix[17:]['Site']:
+for site_name in site_list['Site']:
     print
     print site_name
     try:
@@ -100,7 +100,7 @@ for site_name in site_list.ix[17:]['Site']:
         ## Extract measurement data using the defined port number (+1)
         try:
             site_sensor_position = 0
-            if site_name in ['SLR-045B','SDR-204A','SLR-095']:
+            if site_name in ['SLR-045B','SDR-204A']:#,'SLR-095']:
                 #print 'Sensor for '+site_name+' is in second plug position'
                 site_sensor_position+=1
             water_level_data = filter(lambda x: x[0]['description']=='Water Level', row[3:])[site_sensor_position] 
@@ -111,6 +111,7 @@ for site_name in site_list.ix[17:]['Site']:
             meas_df = meas_df.T
             meas_dict = dict(meas_df.ix['value'])
         except:
+            raise
             print 'No Water Level data in description'
             meas_dict = {u' Sensor Metadata': np.nan, u'in Water Level':  np.nan, u'mS/cm EC':  np.nan, u'\xb0F Water Temperature':  np.nan}
         ## Extract battery level data
