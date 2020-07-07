@@ -14,7 +14,7 @@ from matplotlib.dates import DateFormatter
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'#+'test/'
 # Format for UTC
 mytz = timezone('US/Pacific')
-start_time_loc = dt.datetime(2020,5,29,18,15)
+start_time_loc = dt.datetime(2020,5,1,0,0)
 start_time_loc = mytz.normalize(mytz.localize(start_time_loc,is_dst=True))
 ## Get Master Site List
 site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/MasterSiteList.csv')
@@ -100,9 +100,13 @@ for site_name in site_list['Site']:
         ## Extract measurement data using the defined port number (+1)
         try:
             site_sensor_position = 0
-            if site_name in ['SLR-045B','SDR-204A']:#,'SLR-095']:
+            if site_name in ['SLR-045B']:#,'SLR-095']:
                 #print 'Sensor for '+site_name+' is in second plug position'
                 site_sensor_position+=1
+            if site_name in ['SDR-204A']:
+                #print 'Sensor for '+site_name+' is in second plug position'
+                site_sensor_position+=2  
+                
             water_level_data = filter(lambda x: x[0]['description']=='Water Level', row[3:])[site_sensor_position] 
             meas_df = pd.DataFrame(water_level_data)
             ## Construct headers using units and parameter name
