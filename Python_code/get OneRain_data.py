@@ -27,7 +27,7 @@ Rain_gauge_names = Rain_gauge_info.index.unique()
 
 ######### UPDATE HERE ###################
 #start_date, end_date = '2020-05-01', '2020-06-29' 
-start_date, end_date = '2020-06-01', dt.date.today().strftime('%Y-%m-%d') ## for current day: dt.date.today().strftime('%Y-%m-%d')
+start_date, end_date = '2020-07-01', dt.date.today().strftime('%Y-%m-%d') ## for current day: dt.date.today().strftime('%Y-%m-%d')
 time_bin  = '3600' #seconds. Daily=86400, Hourly=3600
 #######################################
 
@@ -125,8 +125,8 @@ for Rain_gauge_name in Rain_gauge_names:
 
 raindir = maindir+'Rain_data/'
 
-old_rain_files = raindir+'May rain data/'
-new_rain_files = raindir+'June rain data/'
+old_rain_files = raindir+'June rain data/'
+new_rain_files = raindir+'July rain data/'
 
 
 for old_filename in os.listdir(old_rain_files):

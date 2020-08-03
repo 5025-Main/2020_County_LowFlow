@@ -24,7 +24,7 @@ site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County
 site_list = site_list[~site_list['Site'].isin(['SLR-095','SDG-084','SDR-098','SDG-085G','SLR-045'])]
 
 ## Loop through all sites
-for site_name in site_list['Site'][27:]:
+for site_name in site_list['Site']:
     print
     print site_name
     try:
