@@ -100,7 +100,7 @@ for site_name in site_list['Site']:
         ## Extract measurement data using the defined port number (+1)
         try:
             site_sensor_position = 0
-            if site_name in ['SLR-045B']:#,'SLR-095']:
+            if site_name in ['SLR-045B','SDG-287']:#,'SLR-095']:
                 #print 'Sensor for '+site_name+' is in second plug position'
                 site_sensor_position+=1
             if site_name in ['SDR-204A']:

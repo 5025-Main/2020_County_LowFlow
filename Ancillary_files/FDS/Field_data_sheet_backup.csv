@@ -716,3 +716,36 @@
 714,2020-08-03 17:08:59,SDG-084,2020-08-01 04:00:00,Obstructed,Obstruction first seen on game camera at this time,,0.0,60.0,0
 715,2020-08-03 17:11:41,SDG-085,2020-07-31 21:00:00,Obstructed,Obstruction (water bottle) first seen on game camera at this time,,0.0,60.0,0
 716,2020-08-03 17:13:49,SDR-127,2020-07-30 08:30:00,Obstructed,Obstruction (branch) first seen on game camera at this time,,0.0,60.0,0
+717,2020-08-03 17:17:13,SLR-095,2020-07-29 01:30:00,Obstructed,Obstruction (leaves) first seen on game camera at this time,,0.0,60.0,0
+718,2020-08-03 17:19:32,SWT-068,2020-08-01 03:00:00,Obstructed,Obstruction (wood stake) first seen on game camera at this time,,0.0,60.0,0
+719,2020-08-03 21:30:02,SWT-068,2020-08-01 03:00:00,Obstructed,Obstruction (wood stake) first seen on game camera at this time,,0.0,60.0,0
+720,2020-08-04 08:23:40,SLR-045,2020-08-04 08:20:00,Ponded, One,https://drive.google.com/open?id=1M_EGpIpRPLvpSKXfn2Cn28UkT4RBWWyw,-2.0,60.0,0
+721,2020-08-04 08:40:26,SLR-045B,2020-08-04 08:40:00,Ponded,None,https://drive.google.com/open?id=1BwWCrXSZAdvp0CJkl2d-1aRUOdxJ06pB,0.0,60.0,0
+722,2020-08-04 08:44:03,SLR-045A,2020-08-04 08:45:00,Flowing,Trickle flow but negative downstream at 45,,1.0,60.0,350
+723,2020-08-04 09:41:29,SLR-095,2020-08-04 09:40:00,Flowing,Cleared obstruction. Removed non working probe in Port 4 06-2289,,2.8,19.3,3300
+724,2020-08-04 10:31:00,SDG-072A,2020-08-04 10:30:00,Flowing,Trickle flow very stinky lots of trash,,0.6,60.0,80
+725,2020-08-04 10:41:50,SDG-072,2020-08-04 10:45:00,Flowing,Cleared small obstruction,,1.1,60.0,910
+726,2020-08-04 11:07:18,SDG-084,2020-08-04 11:05:00,Negative level due to clearing debris behind weir,Cleared obstruction and scooped out debris,,-2.0,60.0,0
+727,2020-08-04 11:17:07,SDG-084,2020-08-04 11:15:00,Flowing,Flowing again after obstruction cleared,,2.2,28.0,3100
+728,2020-08-04 11:18:34,SDG-084,2020-08-04 11:20:00,Flowing,Second MEAS to see if stable,,2.3,28.0,3100
+729,2020-08-04 11:42:42,SLR-045B,2020-08-04 08:40:00,Ponded,None,https://drive.google.com/open?id=1y0mNjflVQ0KWdWQLiCs59IcKw9mqoznN,0.0,60.0,0
+730,2020-08-04 11:49:03,SDG-085,2020-08-04 11:45:00,Obstructed,Debris removed first then measurement ,"https://drive.google.com/open?id=1J99ysRGEQXuCtFr17J1RdwCXP4KYAC3a, https://drive.google.com/open?id=1EXYsHgRNb0ehAcztdkm2uVuehsNhwf92",5.0,7.7,7800
+731,2020-08-04 12:17:44,SDG-085G,2020-08-04 12:15:00,Obstructed,Debris removed and level of water draining out. No inflow from curb or pipe. Will return to ponded.,,1.2,60.0,0
+732,2020-08-04 12:21:16,SDG-085G,2020-08-04 12:30:00,Ponded,None,,0.0,60.0,0
+733,2020-08-04 12:43:10,SDG-085M,2020-08-04 12:45:00,Flowing,Calcification,,2.5,15.8,2500
+734,2020-08-04 13:41:13,SDG-084J,2020-08-04 13:40:00,Ponded,Not flowing but ponded right at 0,,0.0,60.0,0
+735,2020-08-04 14:31:54,SDG-085G,2020-08-04 12:30:00,Ponded,None,,0.0,60.0,0
+736,2020-08-04 14:47:30,CAR-072,2020-08-04 14:35:00,Flowing,None,https://drive.google.com/open?id=1H--hcDQ30scuFK671BNNEg6gqGj3WT3P,1.9,49.0,3350
+737,2020-08-04 15:44:37,CAR-072C,2020-08-04 15:00:00,Flowing,None,,1.9,40.0,3370
+738,2020-08-04 16:25:16,CAR-072R,2020-08-04 16:25:00,Flowing,Flow too low to measure ,,0.3,60.0,0
+739,2020-08-05 08:31:26,CAR-072,2020-08-04 14:35:00,Flowing,None,https://drive.google.com/open?id=1TVOhEyjm9aNfQv2sp-HIPjbM_MGnSM7h,1.9,49.0,3350
+740,2020-08-05 08:36:51,CAR-070,2020-08-05 08:30:00,Flowing,None,https://drive.google.com/open?id=1KiHUBmHUqzdJ98rDnqJhiYVq50iS_c9F,2.1,30.0,3080
+741,2020-08-05 09:07:04,CAR-070E,2020-08-05 09:05:00,Flowing,None,https://drive.google.com/open?id=1sPurxEODbUDW8a9RBR5NREytnD7lXo4f,1.5,10.0,400
+742,2020-08-05 09:23:48,CAR-072Q,2020-08-05 09:20:00,Obstructed,"Obstructed with leaves. Disregard flow measurement, level only",https://drive.google.com/open?id=1ax23tc4_ipWJPh06A9WjlP0SH5mxd_og,1.4,60.0,0
+743,2020-08-05 09:28:09,CAR-072Q,2020-08-05 09:30:00,Flowing,Lots of debris at this site,,1.4,60.0,1630
+744,2020-08-05 09:38:18,CAR-072O,2020-08-05 09:40:00,Flowing,Trickle. Too low to measure,,0.3,60.0,0
+745,2020-08-05 10:31:01,SDG-287,2020-08-05 10:30:00,Obstructed,Fully obstructing ,,0.0,60.0,0
+746,2020-08-05 10:34:37,SDG-287,2020-08-05 10:35:00,Obstructed,Measured right after obstruction cleared. Should go to ponder or barely trickle in a few minutes,,1.0,60.0,0
+747,2020-08-05 11:47:02,CAR-059G,2020-08-05 11:45:00,Flowing,Looks good,,1.2,60.0,1410
+748,2020-08-05 12:22:43,CAR-059,2020-08-05 12:00:00,Dry,Dry AF,"https://drive.google.com/open?id=1Y0QW8X5sGjeVgtx_qn9j1dMDHL0pcRIX, https://drive.google.com/open?id=1uVZCusUAdn7eDstNmdjwt9RXNXNva4ra",0.0,60.0,0
+749,2020-08-05 12:25:19,CAR-007,2020-08-05 12:25:00,Ponded,Probe just barely under water,https://drive.google.com/open?id=1SjcVwx09SZ87PTj2uHAIXfhb1z7yro_T,-11.2,60.0,0
