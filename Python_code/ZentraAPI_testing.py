@@ -115,7 +115,7 @@ for site_name in site_list['Site']:
             meas_df = meas_df.T
             meas_dict = dict(meas_df.ix['value'])
         except:
-            #raise
+            raise
             print 'No Water Level data in description'
             meas_dict = {u' Sensor Metadata': np.nan, u'in Water Level':  np.nan, u'mS/cm EC':  np.nan, u'\xb0F Water Temperature':  np.nan}
         ## Extract battery level data
