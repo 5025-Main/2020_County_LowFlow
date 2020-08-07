@@ -19,7 +19,7 @@ start_time_loc = mytz.normalize(mytz.localize(start_time_loc,is_dst=True))
 ## Get Master Site List
 site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/MasterSiteList.csv')
 ## Just one site
-site_list =  site_list[site_list['Site'] == 'SDG-287'] ###########
+site_list =  site_list[site_list['Site'] == 'SDG-085G'] ###########
 
 #site_list = site_list[~site_list['Site'].isin(['SLR-095','SDG-084','SDR-098','SDG-085G','SLR-045'])]
 
@@ -115,7 +115,7 @@ for site_name in site_list['Site']:
             meas_df = meas_df.T
             meas_dict = dict(meas_df.ix['value'])
         except:
-            raise
+            #raise
             print 'No Water Level data in description'
             meas_dict = {u' Sensor Metadata': np.nan, u'in Water Level':  np.nan, u'mS/cm EC':  np.nan, u'\xb0F Water Temperature':  np.nan}
         ## Extract battery level data
