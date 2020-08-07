@@ -194,7 +194,7 @@
 192,2020-05-15 11:14:02,SWT-019,2020-05-14 12:56:00,Flowing,lite flow,,0.4,60.0,200
 193,2020-05-15 13:46:58,CAR-059,2020-05-15 13:45:00,Flowing,Level seems to have dropped alot,https://drive.google.com/open?id=1LmvUmClBYM2AZqwjeTJ7p2qFAZllu5kD,3.4,0.0,0
 194,2020-05-15 14:06:23,CAR-007,2020-05-15 14:05:00,Flowing,Evidence of flow over the weir. Some sticks and twigs about 1cm high in vee,"https://drive.google.com/open?id=100X9jyxPjExz87G_1TNxax2keY6ekKm1, https://drive.google.com/open?id=1i7XMh2NeR5tila68cFB18Evc0vt9iOXS",-1.6,60.0,0
-195,2020-05-19 16:08:06,SDG-084J,2020-05-19 03:57:00,Flowing,none,,1.0,60.28,460
+195,2020-05-19 16:08:06,SDG-084J,2020-05-19 15:57:00,Flowing,none,,1.0,60.28,460
 196,2020-05-19 12:07:21,CAR-007,2020-05-19 12:01:00,Ponded,"Not sure if ponded or leaking. Spy point photos show weird behavior (flowing then ponding at v, then sudden drops in level). Suspected hole in adjacent pipe.",https://drive.google.com/open?id=1Or5O-obYMfT-s5yrtlLuKnep3KwztRag,-2.0,60.0,0
 197,2020-05-19 12:38:02,CAR-059,2020-05-19 12:34:00,Flowing,Water level measurement taken before contraction. Difficult to get accurate flow measurement. ,https://drive.google.com/open?id=1MV6VwS3_aYCkoHRzVgeXIwdqBtvmtoBi,5.0,60.0,0
 198,2020-05-19 12:58:13,CAR-059G,2020-05-19 12:55:00,Flowing,Frothy,https://drive.google.com/open?id=1uudLByaOzsRwy5ct34vQRLiNDRm_orOT,2.5,15.25,1400
@@ -332,8 +332,8 @@
 330,2020-05-28 14:37:31,SDG-072A,2020-05-28 02:35:00,Flowing,None,,0.7,60.0,330
 331,2020-05-28 15:12:31,SDG-085M,2020-05-28 15:10:00,Flowing,None ,,2.7,13.4,2670
 332,2020-05-28 15:15:00,SDG-085M,2020-05-28 15:15:00,Flowing,None,,2.7,13.25,2750
-333,2020-05-28 15:37:43,SDG-084J,2020-05-28 03:35:00,Flowing,None ,,0.7,60.0,290
-334,2020-05-28 15:39:36,SDG-084J,2020-05-28 03:40:00,Flowing,None ,,0.7,60.0,270
+333,2020-05-28 15:37:43,SDG-084J,2020-05-28 15:35:00,Flowing,None ,,0.7,60.0,290
+334,2020-05-28 15:39:36,SDG-084J,2020-05-28 15:40:00,Flowing,None ,,0.7,60.0,270
 335,2020-05-28 09:40:03,SLR-095,2020-05-28 09:40:00,Flowing,None,,3.7,7.0,2950
 336,2020-05-28 09:45:17,SLR-095,2020-05-28 09:45:00,Flowing,None,,3.7,7.0,2960
 337,2020-05-29 16:11:32,SLR-095,2020-05-28 09:45:00,Flowing,None,,3.7,7.0,2960
