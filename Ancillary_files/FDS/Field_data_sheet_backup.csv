@@ -750,3 +750,4 @@
 748,2020-08-05 12:22:43,CAR-059,2020-08-05 12:00:00,Dry,Dry AF,"https://drive.google.com/open?id=1Y0QW8X5sGjeVgtx_qn9j1dMDHL0pcRIX, https://drive.google.com/open?id=1uVZCusUAdn7eDstNmdjwt9RXNXNva4ra",0.0,60.0,0
 749,2020-08-05 12:25:19,CAR-007,2020-08-05 12:25:00,Ponded,Probe just barely under water,https://drive.google.com/open?id=1SjcVwx09SZ87PTj2uHAIXfhb1z7yro_T,-11.2,60.0,0
 750,2020-08-07 10:37:21,CAR-070,2020-08-05 08:30:00,Flowing,None,https://drive.google.com/open?id=18aiZ0Rv45LvWhqvgjkpsO7tF9xYJOq_J,2.1,30.0,3080
+751,2020-08-11 11:40:01,SDG-085G,2020-08-11 11:40:00,Ponded,Added additional probe to logger port 5. Installed additional logger and probe ( from green valley). Original logger may be malfunctioning. 3 probes total,,-0.1,60.0,0
