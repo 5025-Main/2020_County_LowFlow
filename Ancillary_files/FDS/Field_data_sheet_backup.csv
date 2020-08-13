@@ -751,3 +751,19 @@
 749,2020-08-05 12:25:19,CAR-007,2020-08-05 12:25:00,Ponded,Probe just barely under water,https://drive.google.com/open?id=1SjcVwx09SZ87PTj2uHAIXfhb1z7yro_T,-11.2,60.0,0
 750,2020-08-07 10:37:21,CAR-070,2020-08-05 08:30:00,Flowing,None,https://drive.google.com/open?id=18aiZ0Rv45LvWhqvgjkpsO7tF9xYJOq_J,2.1,30.0,3080
 751,2020-08-11 11:40:01,SDG-085G,2020-08-11 11:40:00,Ponded,Added additional probe to logger port 5. Installed additional logger and probe ( from green valley). Original logger may be malfunctioning. 3 probes total,,-0.1,60.0,0
+752,2020-08-12 09:53:06,SDR-064A,2020-08-12 09:50:00,Flowing,None ,https://drive.google.com/open?id=1Ow8wzJW84c5IwstcZHCQpzHqA2zEdqGP,2.4,15.0,2000
+753,2020-08-12 10:00:42,SDR-064B,2020-08-12 10:00:00,Ponded,None,https://drive.google.com/open?id=142onu6sEpPiZpOqcqZp1r32ezGWUroJZ,0.0,60.0,0
+754,2020-08-12 10:03:04,SDR-064D,2020-08-10 10:05:00,Ponded,None,https://drive.google.com/open?id=1KRijV8kgUHKNygsCWu9X2x8y3gQ4m-pp,0.0,60.0,0
+755,2020-08-12 10:05:55,SDR-064C,2020-08-10 10:05:00,Ponded,None,https://drive.google.com/open?id=1qV00fFejCebySXajEebyKwibb_dugkQs,-6.5,60.0,0
+756,2020-08-12 10:09:12,SDR-064,2020-08-10 10:10:00,Dry,None,https://drive.google.com/open?id=1MbV4l-ej7W_YjJrZxVuhquxmF0r7jgQ9,-10.0,60.0,0
+757,2020-08-12 10:24:31,SDR-098,2020-08-10 10:25:00,Ponded,None,https://drive.google.com/open?id=1ii7SNicOmxGOS9Orh7914QBkPcftmAHB,0.0,60.0,0
+758,2020-08-12 10:34:04,SDR-041,2020-08-10 10:35:00,Flowing,None ,,2.5,30.0,6000
+759,2020-08-12 10:52:11,SDR-203A,2020-08-10 10:50:00,Ponded,None,,0.0,60.0,0
+760,2020-08-12 10:54:34,SDR-204A,2020-08-10 10:55:00,Flowing,None,,0.5,60.0,990
+761,2020-08-12 11:09:52,SDR-036,2020-08-10 11:05:00,Ponded,None ,,-4.0,60.0,0
+762,2020-08-12 11:26:43,SDR-127B,2020-08-10 11:25:00,Flowing,None ,,0.9,60.0,400
+763,2020-08-12 11:37:33,SDR-127,2020-08-10 11:35:00,Flowing,None ,,1.5,30.0,1690
+764,2020-08-12 11:44:40,SDR-130,2020-08-10 11:45:00,Ponded,None ,,-3.0,60.0,0
+765,2020-08-13 09:15:05,SWT-235,2020-08-13 09:12:00,Flowing,Flowing well,https://drive.google.com/open?id=19cwOd7IF3qBLIUWtr8ATjhLEfEVVxsRL,3.4,12.0,2800
+766,2020-08-13 09:39:48,SWT-162,2020-08-13 09:40:00,Flowing,None ,,3.4,10.0,2850
+767,2020-08-13 09:56:20,SWT-068,2020-08-13 09:55:00,Flowing,None,,5.6,3.0,3980
