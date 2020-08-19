@@ -26,4 +26,4 @@ for f in [d for d in os.listdir(flow_datadir) if d.endswith('.xlsx')]:
     ## add column to df
     flow_data_df.loc[:,flow_col] = df['Flow compound weir stormflow clipped (gpm)']
 #%%
-flow_data_df.to_csv('C:/Users/alex.messina/Desktop/Temporary_work_shit/County Weirs/'+'Flow data for MS4 sites 2015-2019 Wood.csv') 
+flow_data_df.to_csv(flow_datadir + '2020_Flow_compiled.csv') 
