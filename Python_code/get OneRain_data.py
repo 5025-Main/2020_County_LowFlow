@@ -27,7 +27,7 @@ Rain_gauge_names = Rain_gauge_info.index.unique()
 
 ######### UPDATE HERE ###################
 #start_date, end_date = '2020-05-01', '2020-06-29' 
-start_date, end_date = '2020-07-01', dt.date.today().strftime('%Y-%m-%d') ## for current day: dt.date.today().strftime('%Y-%m-%d')
+start_date, end_date = '2020-08-01', dt.date.today().strftime('%Y-%m-%d') ## for current day: dt.date.today().strftime('%Y-%m-%d')
 time_bin  = '3600' #seconds. Daily=86400, Hourly=3600
 #######################################
 
@@ -125,28 +125,25 @@ for Rain_gauge_name in Rain_gauge_names:
 
 raindir = maindir+'Rain_data/'
 
-old_rain_files = raindir+'June rain data/'
-new_rain_files = raindir+'July rain data/'
-
-
-for old_filename in os.listdir(old_rain_files):
+for old_filename in os.listdir('C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/Rain_data/May rain data'):
     print old_filename
-    rain_panda = pd.DataFrame()
-    ## old file
-    old_file = pd.read_csv(old_rain_files  + old_filename, index_col = 0)
-    print(old_filename)
-    ## new file
-    new_filename = [f for f in os.listdir(new_rain_files) if f == old_filename][0]
-    new_file = pd.read_csv(new_rain_files + new_filename, index_col = 0)
-    print(new_filename)
-    
-    
-    rain_panda = new_file.append(old_file)
+    rain_panda = pd.DataFrame(columns=['Rain_in'])
+    for f in [x[0] for x in os.walk(raindir)]:
+        print f
+        ## month file
+        try:
+            old_file = pd.read_csv(f  +'/'+ old_filename, index_col = 0)
+            print(old_filename)
+            rain_panda = rain_panda.append(old_file)
+        except:
+            pass
+        
+        
     rain_panda['idx']=rain_panda.index
     rain_panda = rain_panda.drop_duplicates(subset='idx')
     rain_panda = rain_panda.sort_index()
 #    print(rain_panda)
-    rain_panda[['Rain_in']].to_csv(raindir+new_filename)
+    rain_panda[['Rain_in']].to_csv(raindir+old_filename)
 
     
     
