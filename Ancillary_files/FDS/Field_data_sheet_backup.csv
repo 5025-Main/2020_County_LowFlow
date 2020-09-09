@@ -791,7 +791,7 @@
 789,2020-08-19 12:13:43,SDR-127,2020-08-19 12:10:00,Flowing,None ,,0.6,60.0,230
 790,2020-08-19 12:24:40,SDR-130,2020-08-19 12:25:00,Ponded,None ,,0.0,60.0,0
 791,2020-08-19 13:36:34,SDR-130,2020-08-19 12:25:00,Ponded,None ,,0.0,60.0,0
-792,2020-08-19 12:30:17,CAR-072O,2020-08-19 12:29:00,Flowing,Nada,,0.2,60.0,0
+792,2020-08-19 12:30:17,CAR-072O,2020-08-19 12:30:00,Flowing,Nada,,0.2,60.0,0
 793,2020-08-19 12:49:22,CAR-070,2020-08-19 12:50:00,Flowing,None,,2.3,10.58,1410
 794,2020-08-20 13:14:07,CAR-070,2020-08-19 12:50:00,Flowing,None,,2.3,10.58,1410
 795,2020-08-19 13:11:49,CAR-070E,2020-08-19 13:10:00,Flowing,Dead rabbit,,2.0,4.31,450
@@ -862,3 +862,5 @@
 860,2020-09-03 14:04:12,SDG-287,2020-09-03 14:05:00,Flowing,Barely trickle flow. Too low to measure ,,0.1,60.0,0
 861,2020-09-09 11:45:59,CAR-059,2020-09-09 11:30:00,Dry,Changed camera batteries ,,0.0,60.0,0
 862,2020-09-09 11:59:46,CAR-007,2020-09-09 11:55:00,Flowing,Replaced camera batteries,https://drive.google.com/open?id=1mDniyUGOZjLBgreVKPZXbc-3QHV4YCMl,1.6,60.0,1630
+863,2020-09-09 13:54:37,CAR-007,2020-09-09 11:55:00,Flowing,Replaced camera batteries,https://drive.google.com/open?id=1ZyZKskCd4jQghzKWCc_fpuS5VpOBXoqm,1.6,60.0,1630
+864,2020-09-09 13:58:00,SDG-084J,2020-09-09 13:55:00,Ponded,New probe added in port 5. SN is 1634010988,,-0.6,60.0,0
