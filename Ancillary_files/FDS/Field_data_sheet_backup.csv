@@ -570,7 +570,7 @@
 568,2020-07-09 11:47:48,CAR-072C,2020-07-09 11:35:00,Flowing,None,,1.8,36.11,2250
 569,2020-07-09 12:33:56,CAR-072O,2020-07-09 12:00:00,Flowing,"Trickle flow, too low to measure. ",https://drive.google.com/open?id=1SrB8S1TcWSQevtsV0JygR9exkMPjccMF,0.2,60.0,0
 570,2020-07-09 12:57:34,SDG-072A,2020-07-09 12:55:00,Flowing,Trickle flow,,0.5,60.0,130
-571,2020-07-09 13:00:30,SDG-072A,2020-07-09 13:00:00,Flowing,Trickle flow,,5.0,60.0,125
+571,2020-07-09 13:00:30,SDG-072A,2020-07-09 13:00:00,Flowing,Trickle flow,,0.5,60.0,125
 572,2020-07-09 13:04:17,SDG-072A,2020-07-09 13:00:00,Flowing,Trickle flow,https://drive.google.com/open?id=1tsFlCwceif8015iirTbZuSwfCo4mSv-d,0.5,60.0,95
 573,2020-07-09 13:28:42,SDG-084,2020-07-09 13:25:00,Flowing,None,,3.2,12.12,3250
 574,2020-07-09 13:33:15,SDG-084,2020-07-09 13:30:00,Flowing,None,,3.2,11.95,3270
