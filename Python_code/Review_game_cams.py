@@ -13,7 +13,7 @@ from scipy import ndimage
 from PIL import Image
 import piexif
 
-site_name = 'SDR-041'
+site_name = 'SDR-127'
 pic_start_time = dt.datetime(2020,7,31,22,0)
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
