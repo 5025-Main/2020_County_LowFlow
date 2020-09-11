@@ -150,7 +150,7 @@ for site_name in site_list['Site Name']:
     if len(WL_existing)>0:
         ax.plot_date(pd.to_datetime(WL_existing.index),WL_existing['in Water Level'],marker='None',ls='-',c='grey')
     ax.legend()
-    ax.xaxis.set_major_formatter(DateFormatter('%m/%d/%Y'))# %H:%M'))
+    ax.xaxis.set_major_formatter(DateFormatter('%m/%d/%Y %H:%M')) #'))#
     ## Save raw data to csv
     WL[['in Water Level',u'°F Water Temperature',u'mS/cm EC',u' Sensor Metadata',u'% Battery Percent','mV Battery Voltage','kPa Reference Pressure',u'\xb0F Logger Temperature']].to_csv(maindir+'/Water_Level_data/'+site_name+'_raw_data_ZentraAPI.csv',encoding='utf-8')
 #%%  
