@@ -14,7 +14,7 @@ from PIL import Image
 import piexif
 
 site_name = 'SWT-030'
-pic_start_time = dt.datetime(2020,8,1,0,0)
+pic_start_time = dt.datetime(2020,8,15,0,0)
 
 maindir = 'C:/Users/alex.messina/Documents/GitHub/2020_County_LowFlow/'
 ## Local file
