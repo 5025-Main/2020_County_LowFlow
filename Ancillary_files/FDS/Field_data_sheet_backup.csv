@@ -762,7 +762,7 @@
 760,2020-08-19 09:23:05,SDG-085G,2020-08-11 11:40:00,Ponded,Added additional probe to logger port 5. Installed additional logger and probe ( from green valley). Original logger may be malfunctioning. 3 probes total,,-0.1,60.0,0
 761,2020-08-12 09:53:06,SDR-064A,2020-08-12 09:50:00,Flowing,None ,https://drive.google.com/open?id=1Ow8wzJW84c5IwstcZHCQpzHqA2zEdqGP,2.4,15.0,2000
 762,2020-08-12 10:00:42,SDR-064B,2020-08-12 10:00:00,Ponded,None,https://drive.google.com/open?id=142onu6sEpPiZpOqcqZp1r32ezGWUroJZ,0.0,60.0,0
-763,2020-08-13 09:15:05,SWT-235,2020-08-13 09:12:00,Flowing,Flowing well,https://drive.google.com/open?id=19cwOd7IF3qBLIUWtr8ATjhLEfEVVxsRL,3.4,12.0,2800
+763,2020-08-13 09:15:05,SWT-235,2020-08-13 09:15:00,Flowing,Flowing well,https://drive.google.com/open?id=19cwOd7IF3qBLIUWtr8ATjhLEfEVVxsRL,3.4,12.0,2800
 764,2020-08-13 09:39:48,SWT-162,2020-08-13 09:40:00,Flowing,None ,,3.4,10.0,2850
 765,2020-08-13 09:56:20,SWT-068,2020-08-13 09:55:00,Flowing,None,,5.6,3.0,3980
 766,2020-08-13 10:07:23,SWT-030I,2020-08-13 10:05:00,Flowing,None ,,0.5,30.0,40
