@@ -19,7 +19,7 @@ start_time_loc = mytz.normalize(mytz.localize(start_time_loc,is_dst=True))
 ## Get Master Site List
 site_list = pd.read_csv('https://raw.githubusercontent.com/5025-Main/2020_County_LowFlow/master/Ancillary_files/MasterSiteList.csv')
 ## Just one site
-#site_list =  site_list[site_list['Site Name'] == 'SDR-127B'] ###########
+site_list =  site_list[site_list['Site Name'] == 'SDG-084J'] ###########
 
 #site_list = site_list[~site_list['Site Name'].isin(['SLR-095','SDG-084','SDR-098','SDG-085G','SLR-045'])]
 
@@ -100,7 +100,7 @@ for site_name in site_list['Site Name']:
         ## Extract measurement data using the defined port number (+1)
         try:
             site_sensor_position = 0
-            if site_name in ['SLR-045B','SDG-287']:#,'SLR-095']:
+            if site_name in ['SLR-045B','SDG-287','SDG-084J']:#,'SLR-095']:
                 #print 'Sensor for '+site_name+' is in second plug position'
                 site_sensor_position+=1
             if site_name in ['SDR-204A']:
