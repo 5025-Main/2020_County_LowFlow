@@ -407,7 +407,7 @@
 405,2020-06-10 17:23:40,CAR-070,2020-06-10 17:19:00,Flowing,N/A,,2.0,40.11,4320
 406,2020-06-11 08:54:36,CAR-007,2020-06-11 08:55:00,Leaking,Setup is leaking somewhere upstream of weir. Weir itself is not leaking. Negative level taken. ,,-6.0,60.0,0
 407,2020-06-12 18:32:59,SDR-064B,2020-06-11 09:00:00,Ponded,level with V,https://drive.google.com/open?id=1EoCnnkgtnWtbZwmpEUe8sQTsn9HJlaer,0.0,60.0,0
-408,2020-06-12 18:39:54,SDR-064D,2020-06-11 09:05:00,Flowing,"flowing, set new probe next to p/3 - p/4",https://drive.google.com/open?id=1LFvb50hQAiw4E1ztsV0AjIXcBr313PEH,1.0,30.0,500
+408,2020-06-12 18:39:54,SDR-064D,2020-06-12 09:05:00,Flowing,"flowing, set new probe next to p/3 - p/4",https://drive.google.com/open?id=1LFvb50hQAiw4E1ztsV0AjIXcBr313PEH,1.0,30.0,500
 409,2020-06-12 18:43:12,SDR-064C,2020-06-11 09:05:00,Ponded,-5 level due to leaks in pavement ,https://drive.google.com/open?id=1phdoDt3o-l_FyvMOERcjhqQuLCXgtbfq,-6.5,60.0,0
 410,2020-06-11 09:42:15,SDG-072A,2020-06-11 09:40:00,Flowing,None,,0.6,60.0,100
 411,2020-06-11 09:44:45,SDG-072A,2020-06-11 09:40:00,Flowing,None,,0.6,60.0,100
@@ -709,7 +709,7 @@
 707,2020-07-29 10:47:45,SDR-064A,2020-07-29 10:45:00,Flowing,None,,0.4,60.0,180
 708,2020-07-29 10:53:06,SDR-064B,2020-07-29 10:55:00,Ponded,None ,,0.0,60.0,0
 709,2020-07-29 10:54:57,SDR-064C,2020-07-29 10:55:00,Ponded,None,,-5.0,60.0,0
-710,2020-07-29 10:59:10,SDR-064D,2020-07-29 10:55:00,Ponded,None,,-5.0,60.0,0
+710,2020-07-29 10:59:10,SDR-064D,2020-07-29 10:55:00,Ponded,None,,0.0,60.0,0
 711,2020-07-29 11:02:35,SDR-064,2020-07-29 11:01:00,Dry,None,,-10.0,60.0,0
 712,2020-08-03 17:13:49,SDR-127,2020-07-30 08:30:00,Obstructed,Obstruction (branch) first seen on game camera at this time,,0.0,60.0,0
 713,2020-08-03 17:11:41,SDG-085,2020-07-31 21:00:00,Obstructed,Obstruction (water bottle) first seen on game camera at this time,,0.0,60.0,0
@@ -747,8 +747,8 @@
 745,2020-08-05 11:47:02,CAR-059G,2020-08-05 11:45:00,Flowing,Looks good,,1.2,60.0,1410
 746,2020-08-05 12:22:43,CAR-059,2020-08-05 12:00:00,Dry,Dry AF,"https://drive.google.com/open?id=1Y0QW8X5sGjeVgtx_qn9j1dMDHL0pcRIX, https://drive.google.com/open?id=1uVZCusUAdn7eDstNmdjwt9RXNXNva4ra",0.0,60.0,0
 747,2020-08-05 12:25:19,CAR-007,2020-08-05 12:25:00,Ponded,Probe just barely under water,https://drive.google.com/open?id=1SjcVwx09SZ87PTj2uHAIXfhb1z7yro_T,-11.2,60.0,0
-748,2020-08-12 10:03:04,SDR-064D,2020-08-10 10:05:00,Ponded,None,https://drive.google.com/open?id=1KRijV8kgUHKNygsCWu9X2x8y3gQ4m-pp,0.0,60.0,0
-749,2020-08-12 10:05:55,SDR-064C,2020-08-10 10:05:00,Ponded,None,https://drive.google.com/open?id=1qV00fFejCebySXajEebyKwibb_dugkQs,-6.5,60.0,0
+748,2020-08-12 10:03:04,SDR-064D,2020-08-12 10:05:00,Ponded,None,https://drive.google.com/open?id=1KRijV8kgUHKNygsCWu9X2x8y3gQ4m-pp,0.0,60.0,0
+749,2020-08-12 10:05:55,SDR-064C,2020-08-12 10:10:00,Ponded,None,https://drive.google.com/open?id=1qV00fFejCebySXajEebyKwibb_dugkQs,-6.5,60.0,0
 750,2020-08-12 10:09:12,SDR-064,2020-08-10 10:10:00,Dry,None,https://drive.google.com/open?id=1MbV4l-ej7W_YjJrZxVuhquxmF0r7jgQ9,-10.0,60.0,0
 751,2020-08-12 10:24:31,SDR-098,2020-08-10 10:25:00,Ponded,None,https://drive.google.com/open?id=1ii7SNicOmxGOS9Orh7914QBkPcftmAHB,0.0,60.0,0
 752,2020-08-12 10:34:04,SDR-041,2020-08-10 10:35:00,Flowing,None ,,2.5,30.0,6000
