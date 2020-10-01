@@ -95,7 +95,6 @@ for f in [d for d in os.listdir(datadir) if d.endswith('.xlsx')]:
 cond_data_df.to_csv(datadir + '2020_Cond_compiled.csv') 
 
 
-cond_data_df.index = [
 
 
 
